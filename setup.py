@@ -21,7 +21,7 @@ setup(
     name="nameless",
     version="0.1.0",
     license="BSD",
-    description="An example package. Replace this with a proper project description.",
+    description="An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary",
     long_description="%s\n%s" % (read("README.rst"), re.sub(":obj:`~?(.*?)`", r"``\1``", read("CHANGELOG.rst"))),
     author="Ionel Cristian Mărieș",
     author_email="contact@ionelmc.ro",
