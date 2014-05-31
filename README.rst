@@ -22,7 +22,6 @@ Nameless
 An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
 
 * Free software: BSD license
-* Documentation: http://python-nameless.readthedocs.org.
 
 Installation
 ============
