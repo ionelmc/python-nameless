@@ -1,7 +1,3 @@
-exclude .travis* .cache*
-
-global-exclude *.py[co]
-
 graft docs
 graft examples
 graft src
@@ -20,4 +16,7 @@ include LICENSE
 include README.rst
 
 include configure
-include tox*.ini
+include tox.ini tox.tmpl.ini
+include .travis.yml .travis.tmpl.yml
+
+global-exclude *.py[co] __pycache__
