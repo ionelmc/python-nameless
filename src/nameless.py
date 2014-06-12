@@ -10,8 +10,9 @@ def main(argv=()):
 
     Returns:
         int: A return code
-        
+
     Does stuff.
     """
+
     print(argv)
     return 0
