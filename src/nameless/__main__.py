@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-
-__version__ = "0.1.0"
-
+import sys
 
 def main(argv=()):
     """
@@ -16,3 +13,6 @@ def main(argv=()):
 
     print(argv)
     return 0
+
+if __name__ == "__main__":
+    sys.exit(main())    

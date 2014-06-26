@@ -60,7 +60,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "nameless = nameless:main"
+            "nameless = nameless.__main__:main"
         ]
     }
 
