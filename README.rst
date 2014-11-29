@@ -15,11 +15,23 @@ Nameless
     :target: https://coveralls.io/r/ionelmc/python-nameless
 
 .. image:: http://img.shields.io/pypi/v/nameless.png?style=flat
-    :alt: PYPI Package
+    :alt: PyPI Package
     :target: https://pypi.python.org/pypi/nameless
 
 .. image:: http://img.shields.io/pypi/dm/nameless.png?style=flat
-    :alt: PYPI Package
+    :alt: PyPI Package
+    :target: https://pypi.python.org/pypi/nameless
+
+.. image:: https://pypip.in/wheel/nameless.png?style=flat
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/nameless
+
+.. image:: https://pypip.in/py_versions/nameless.png?style=flat
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/nameless
+
+.. image:: https://pypip.in/implementation/nameless.png?style=flat
+    :alt: Supported imlementations
     :target: https://pypi.python.org/pypi/nameless
 
 .. image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.png?style=flat
