@@ -22,15 +22,15 @@ Nameless
     :alt: PyPI Package
     :target: https://pypi.python.org/pypi/nameless
 
-.. image:: https://pypip.in/wheel/nameless.png?style=flat
+.. image:: https://pypip.in/wheel/nameless/badge.png.png?style=flat
     :alt: PyPI Wheel
     :target: https://pypi.python.org/pypi/nameless
 
-.. image:: https://pypip.in/py_versions/nameless.png?style=flat
+.. image:: https://pypip.in/py_versions/nameless/badge.png.png?style=flat
     :alt: Supported versions
     :target: https://pypi.python.org/pypi/nameless
 
-.. image:: https://pypip.in/implementation/nameless.png?style=flat
+.. image:: https://pypip.in/implementation/nameless/badge.png.png?style=flat
     :alt: Supported imlementations
     :target: https://pypi.python.org/pypi/nameless
 
