@@ -2,7 +2,7 @@
 Nameless
 ===============================
 
-| |docs| |travis| |appveyor| |coveralls| |landscape|
+| |docs| |travis| |appveyor| |coveralls| |landscape| |scrutinizer|
 | |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
@@ -21,7 +21,7 @@ Nameless
     :alt: Coverage Status
     :target: https://coveralls.io/r/ionelmc/python-nameless
 
-.. |landscape| image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.png?style=flat
+.. |landscape| image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.svg?style=flat
     :target: https://landscape.io/github/ionelmc/python-nameless/master
     :alt: Code Quality Status
 
@@ -44,6 +44,10 @@ Nameless
 .. |supported-implementations| image:: https://pypip.in/implementation/nameless/badge.png?style=flat
     :alt: Supported imlementations
     :target: https://pypi.python.org/pypi/nameless
+
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.png?style=flat
+    :alt: Scrtinizer Status
+    :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
 An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
 
