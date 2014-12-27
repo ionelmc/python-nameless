@@ -19,9 +19,6 @@ def read(*names, **kwargs):
     ).read()
 
 
-
-
-
 setup(
     name="nameless",
     version="0.1.0",
