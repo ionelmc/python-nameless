@@ -1,4 +1,7 @@
+#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
+from __future__ import absolute_import, print_function
+
 import io
 import os
 import re
@@ -24,7 +27,7 @@ setup(
     version="0.1.0",
     license="BSD",
     description="An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary",
-    long_description="%s\n%s" % (read("README.rst"), re.sub(":obj:`~?(.*?)`", r"``\1``", read("CHANGELOG.rst"))),
+    long_description="{0}\n{1}".format(read("README.rst"), re.sub(":obj:`~?(.*?)`", r"``\1``", read("CHANGELOG.rst"))),
     author="Ionel Cristian Maries",
     author_email="contact@ionelmc.ro",
     url="https://github.com/ionelmc/python-nameless",
