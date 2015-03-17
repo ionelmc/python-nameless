@@ -14,6 +14,12 @@ from os.path import splitext
 
 from setuptools import find_packages
 from setuptools import setup
+from setuptools.command.build_ext import build_ext
+from distutils.core import Extension
+from distutils.errors import CCompilerError
+from distutils.errors import CompileError
+from distutils.errors import DistutilsExecError
+from distutils.errors import DistutilsPlatformError
 
 def read(*names, **kwargs):
     return io.open(
@@ -22,6 +28,35 @@ def read(*names, **kwargs):
     ).read()
 
 
+class optional_build_ext(build_ext):
+    '''Allow the building of C extensions to fail.'''
+    def run(self):
+        try:
+            build_ext.run(self)
+        except DistutilsPlatformError as e:
+            self._unavailable(e)
+            self.extensions = []  # avoid copying missing files (it would fail).
+
+    def build_extension(self, ext):
+        try:
+            build_ext.build_extension(self, ext)
+        except (CCompilerError, CompileError, DistutilsExecError) as e:
+            self._unavailable(e)
+            self.extensions = []  # avoid copying missing files (it would fail).
+
+    def _unavailable(self, e):
+        print('*' * 80)
+        print('''WARNING:
+
+    An optional code optimization (C extension) could not be compiled.
+
+    Optimizations for this package will not be available!
+        ''')
+
+        print('CAUSE:')
+        print('')
+        print('    ' + repr(e))
+        print('*' * 80)
 setup(
     name='nameless',
     version='0.1.0',
@@ -68,4 +103,14 @@ setup(
             'nameless = nameless.__main__:main'
         ]
     },
+    cmdclass={'build_ext': optional_build_ext},
+    ext_modules=[
+        Extension(
+            splitext(relpath(path, 'src').replace(os.sep, '.'))[0],
+            sources=[path],
+            include_dirs=[dirname(path)]
+        )
+        for root, _, _ in os.walk('src')
+        for path in glob(join(root, '*.c'))
+    ]
 )
