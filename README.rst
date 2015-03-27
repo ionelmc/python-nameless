@@ -46,7 +46,7 @@ Nameless
     :target: https://pypi.python.org/pypi/nameless
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.png?style=flat
-    :alt: Scrtinizer Status
+    :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
 An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
