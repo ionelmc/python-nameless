@@ -61,7 +61,7 @@ class optional_build_ext(build_ext):
 
 setup(
     name='nameless',
-    version='1.0.1',
+    version='0.1.0',
     license='BSD',
     description='An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
@@ -95,14 +95,14 @@ setup(
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
     install_requires=[
-        # eg: 'aspectlib==1.1.1', 'six>=1.7',
+        'click',
     ],
     extras_require={
         # eg: 'rst': ['docutils>=0.11'],
     },
     entry_points={
         'console_scripts': [
-            'nameless = nameless.__main__:main'
+            'nameless = nameless.__main__:main',
         ]
     },
     cmdclass={'build_ext': optional_build_ext},
