@@ -2,7 +2,7 @@
 Nameless
 ===============================
 
-| |docs| |travis| |appveyor| |coveralls| |landscape| |scrutinizer|
+| |docs| |travis| |appveyor| |coveralls| |codecov| |landscape| |scrutinizer|
 | |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
@@ -20,6 +20,10 @@ Nameless
 .. |coveralls| image:: http://img.shields.io/coveralls/ionelmc/python-nameless/master.png?style=flat
     :alt: Coverage Status
     :target: https://coveralls.io/r/ionelmc/python-nameless
+
+.. |codecov| image:: http://img.shields.io/codecov/c/ionelmc/python-nameless/master.png?style=flat
+    :alt: Coverage Status
+    :target: https://codecov.io/github/ionelmc/python-nameless
 
 .. |landscape| image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.svg?style=flat
     :target: https://landscape.io/github/ionelmc/python-nameless/master
