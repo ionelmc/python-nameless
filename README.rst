@@ -2,8 +2,12 @@
 Nameless
 ===============================
 
-| |docs| |travis| |appveyor| |coveralls| |codecov| |landscape| |scrutinizer|
-| |version| |downloads| |wheel| |supported-versions| |supported-implementations|
+| |docs| |travis| |appveyor|
+| |coveralls| |codecov| |landscape| |scrutinizer|
+| |version| |downloads|
+
+..
+    |wheel| |supported-versions| |supported-implementations|
 
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless
