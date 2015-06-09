@@ -2,10 +2,11 @@
 Nameless
 ===============================
 
-    | Docs: |docs|
-    | Tests: |travis| |appveyor|
+:docs: |docs|
+:tests: 
+    | |travis| |appveyor|
     | |coveralls| |codecov| |landscape| |scrutinizer|
-    | Package: |version| |downloads|
+:package: |version| |downloads|
 
 ..
     |wheel| |supported-versions| |supported-implementations|
