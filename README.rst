@@ -2,13 +2,16 @@
 Nameless
 ===============================
 
-docs 
-  |docs|
-tests
-  | |travis| |appveyor|
-  | |coveralls| |codecov| |landscape| |scrutinizer|
-package
-  |version| |downloads|
+.. list-table::
+    :stub-columns: 1
+    
+    * - docs 
+      - |docs|
+    * - tests
+      - | |travis| |appveyor|
+        | |coveralls| |codecov| |landscape| |scrutinizer|
+    * - package
+      - |version| |downloads|
 
 ..
     |wheel| |supported-versions| |supported-implementations|
