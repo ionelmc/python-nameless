@@ -2,9 +2,10 @@
 Nameless
 ===============================
 
-| |docs| |travis| |appveyor|
+| Docs: |docs|
+| Tests: |travis| |appveyor|
 | |coveralls| |codecov| |landscape| |scrutinizer|
-| |version| |downloads|
+| Package: |version| |downloads|
 
 ..
     |wheel| |supported-versions| |supported-implementations|
@@ -13,19 +14,19 @@ Nameless
     :target: https://readthedocs.org/projects/python-nameless
     :alt: Documentation Status
 
-.. |travis| image:: http://img.shields.io/travis/ionelmc/python-nameless/master.png?style=flat
+.. |travis| image:: http://img.shields.io/travis/ionelmc/python-nameless/master.svg?style=flat&label=Travis
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/ionelmc/python-nameless
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/ionelmc/python-nameless?branch=master
+.. |appveyor| image:: https://img.shields.io/appveyor/ci/ionelmc/python-nameless/master.svg?style=flat&label=AppVeyor
     :alt: AppVeyor Build Status
     :target: https://ci.appveyor.com/project/ionelmc/python-nameless
 
-.. |coveralls| image:: http://img.shields.io/coveralls/ionelmc/python-nameless/master.png?style=flat
+.. |coveralls| image:: http://img.shields.io/coveralls/ionelmc/python-nameless/master.svg?style=flat&label=Coveralls
     :alt: Coverage Status
     :target: https://coveralls.io/r/ionelmc/python-nameless
 
-.. |codecov| image:: http://img.shields.io/codecov/c/ionelmc/python-nameless/master.png?style=flat
+.. |codecov| image:: http://img.shields.io/codecov/c/github/ionelmc/python-nameless/master.svg?style=flat&label=Codecov
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
 
@@ -33,27 +34,27 @@ Nameless
     :target: https://landscape.io/github/ionelmc/python-nameless/master
     :alt: Code Quality Status
 
-.. |version| image:: http://img.shields.io/pypi/v/nameless.png?style=flat
+.. |version| image:: http://img.shields.io/pypi/v/nameless.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/nameless
 
-.. |downloads| image:: http://img.shields.io/pypi/dm/nameless.png?style=flat
+.. |downloads| image:: http://img.shields.io/pypi/dm/nameless.svg?style=flat
     :alt: PyPI Package monthly downloads
     :target: https://pypi.python.org/pypi/nameless
 
-.. |wheel| image:: https://pypip.in/wheel/nameless/badge.png?style=flat
+.. |wheel| image:: https://pypip.in/wheel/nameless/badge.svg?style=flat
     :alt: PyPI Wheel
     :target: https://pypi.python.org/pypi/nameless
 
-.. |supported-versions| image:: https://pypip.in/py_versions/nameless/badge.png?style=flat
+.. |supported-versions| image:: https://pypip.in/py_versions/nameless/badge.svg?style=flat
     :alt: Supported versions
     :target: https://pypi.python.org/pypi/nameless
 
-.. |supported-implementations| image:: https://pypip.in/implementation/nameless/badge.png?style=flat
+.. |supported-implementations| image:: https://pypip.in/implementation/nameless/badge.svg?style=flat
     :alt: Supported imlementations
     :target: https://pypi.python.org/pypi/nameless
 
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.png?style=flat
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg?style=flat
     :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
