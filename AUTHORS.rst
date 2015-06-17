@@ -2,4 +2,4 @@
 Authors
 =======
 
-* Ionel Cristian Maries - http://blog.ionelmc.ro
+* Ionel Cristian Mărieș - http://blog.ionelmc.ro
