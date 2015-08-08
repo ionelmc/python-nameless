@@ -1,5 +1,5 @@
 nameless
-=============================
+========
 
 .. automodule:: nameless
     :members:

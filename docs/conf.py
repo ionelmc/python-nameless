@@ -20,11 +20,11 @@ if os.getenv('SPELLCHECK'):
 
 source_suffix = '.rst'
 master_doc = 'index'
-project = 'Nameless'
-year = '2015'
-author = 'Ionel Cristian Mărieș'
+project = u'Nameless'
+year = u'2015'
+author = u'Ionel Cristian M\u0103rie\u0219'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.1.0'
+version = release = u'0.1.0'
 import sphinx_py3doc_enhanced_theme
 html_theme = "sphinx_py3doc_enhanced_theme"
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
