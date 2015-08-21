@@ -8,7 +8,7 @@ Nameless
     * - docs
       - |docs|
     * - tests
-      - | |travis| |appveyor|
+      - | |travis| |appveyor| |requires|
         | |coveralls| |codecov| |landscape| |scrutinizer|
     * - package
       - |version| |downloads|
@@ -17,20 +17,25 @@ Nameless
     :target: https://readthedocs.org/projects/python-nameless
     :alt: Documentation Status
 
-.. |travis| image:: https://img.shields.io/travis/ionelmc/python-nameless/master.svg?style=flat&label=Travis
+.. |travis| image:: https://travis-ci.org/ionelmc/python-nameless.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/ionelmc/python-nameless
 
-.. |appveyor| image:: https://img.shields.io/appveyor/ci/ionelmc/python-nameless/master.svg?style=flat&label=AppVeyor
+.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/ionelmc/python-nameless?branch=master&svg=true
     :alt: AppVeyor Build Status
     :target: https://ci.appveyor.com/project/ionelmc/python-nameless
 
-.. |coveralls| image:: https://img.shields.io/coveralls/ionelmc/python-nameless/master.svg?style=flat&label=Coveralls
+.. |requires| image:: https://requires.io/github/ionelmc/python-nameless/requirements.svg?branch=master
+    :alt: Requirements Status
+    :target: https://requires.io/github/ionelmc/python-nameless/requirements/?branch=master
+
+
+.. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=master&service=github
     :alt: Coverage Status
     :target: https://coveralls.io/r/ionelmc/python-nameless
 
 
-.. |codecov| image:: https://img.shields.io/codecov/c/github/ionelmc/python-nameless/master.svg?style=flat&label=Codecov
+.. |codecov| image:: https://codecov.io/github/ionelmc/python-nameless/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
 
