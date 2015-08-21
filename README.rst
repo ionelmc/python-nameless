@@ -11,7 +11,7 @@ Nameless
       - | |travis| |appveyor| |requires|
         | |coveralls| |codecov| |landscape| |scrutinizer| |codacy| |codeclimate|
     * - package
-      - |version| |downloads|
+      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless
@@ -45,12 +45,12 @@ Nameless
     :alt: Code Quality Status
 
 
-.. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg?style=flat&label=Codacy
+.. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg?style=flat
     :target: https://www.codacy.com/app/ionelmc/python-nameless
     :alt: Codacy Code Quality Status
 
 
-.. |codeclimate| image:: https://img.shields.io/codeclimate/github/ionelmc/python-nameless.svg?style=flat&label=CodeClimate
+.. |codeclimate| image:: https://img.shields.io/codeclimate/github/ionelmc/python-nameless.svg?style=flat
    :target: https://codeclimate.com/github/ionelmc/python-nameless
    :alt: CodeClimate Quality Status
 
@@ -60,6 +60,18 @@ Nameless
 
 .. |downloads| image:: https://img.shields.io/pypi/dm/nameless.svg?style=flat
     :alt: PyPI Package monthly downloads
+    :target: https://pypi.python.org/pypi/nameless
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/nameless.svg?style=flat
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/nameless
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/nameless.svg?style=flat
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/nameless
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/nameless.svg?style=flat
+    :alt: Supported imlementations
     :target: https://pypi.python.org/pypi/nameless
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg?style=flat
