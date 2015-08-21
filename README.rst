@@ -9,7 +9,7 @@ Nameless
       - |docs|
     * - tests
       - | |travis| |appveyor| |requires|
-        | |coveralls| |codecov| |landscape| |scrutinizer|
+        | |coveralls| |codecov| |landscape| |scrutinizer| |codacy| |codeclimate|
     * - package
       - |version| |downloads|
 
@@ -45,6 +45,14 @@ Nameless
     :alt: Code Quality Status
 
 
+.. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg?style=flat&label=Codacy
+    :target: https://www.codacy.com/app/ionelmc/python-nameless
+    :alt: Codacy Code Quality Status
+
+
+.. |codeclimate| image:: https://img.shields.io/codeclimate/github/ionelmc/python-nameless.svg?style=flat&label=CodeClimate
+   :target: https://codeclimate.com/github/ionelmc/python-nameless
+   :alt: CodeClimate Quality Status
 
 .. |version| image:: https://img.shields.io/pypi/v/nameless.svg?style=flat
     :alt: PyPI Package latest release

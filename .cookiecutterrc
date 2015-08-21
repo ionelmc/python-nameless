@@ -7,8 +7,8 @@ default_context:
 
     c_extension_optional:      'yes'
     c_extension_support:       'yes'
-    codacy:                    'no'
-    codeclimate:               'no'
+    codacy:                    'yes'
+    codeclimate:               'yes'
     codecov:                   'yes'
     command_line_interface:    'click'
     coveralls:                 'yes'
