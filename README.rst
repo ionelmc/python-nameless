@@ -50,7 +50,7 @@ Nameless
     :alt: Codacy Code Quality Status
 
 
-.. |codeclimate| image:: https://img.shields.io/codeclimate/github/ionelmc/python-nameless.svg?style=flat
+.. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-nameless/badges/gpa.svg
    :target: https://codeclimate.com/github/ionelmc/python-nameless
    :alt: CodeClimate Quality Status
 
