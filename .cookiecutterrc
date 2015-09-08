@@ -5,6 +5,7 @@
 
 default_context:
 
+    appveyor:                  'yes'
     c_extension_optional:      'yes'
     c_extension_support:       'yes'
     codacy:                    'yes'
@@ -22,10 +23,12 @@ default_context:
     project_short_description: 'An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary'
     release_date:              '2015-06-10'
     repo_name:                 'python-nameless'
+    requiresio:                'yes'
     scrutinizer:               'yes'
     sphinx_theme:              'sphinx-py3doc-enhanced-theme'
     test_matrix_configurator:  'yes'
     test_runner:               'pytest'
+    travis:                    'yes'
     version:                   '0.1.0'
     website:                   'http://blog.ionelmc.ro'
     year:                      '2015'
