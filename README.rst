@@ -66,7 +66,7 @@ Nameless
     :target: https://pypi.python.org/pypi/nameless
 
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/nameless.svg?style=flat
-    :alt: Supported imlementations
+    :alt: Supported implementations
     :target: https://pypi.python.org/pypi/nameless
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg?style=flat
