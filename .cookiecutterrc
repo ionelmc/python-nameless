@@ -26,7 +26,7 @@ default_context:
     requiresio:                'yes'
     scrutinizer:               'yes'
     sphinx_theme:              'sphinx-py3doc-enhanced-theme'
-    test_matrix_configurator:  'yes'
+    test_matrix_configurator:  'no'
     test_runner:               'pytest'
     travis:                    'yes'
     version:                   '0.1.0'
