@@ -49,6 +49,7 @@ Nameless
 .. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-nameless/badges/gpa.svg
    :target: https://codeclimate.com/github/ionelmc/python-nameless
    :alt: CodeClimate Quality Status
+
 .. |version| image:: https://img.shields.io/pypi/v/nameless.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/nameless
@@ -72,6 +73,7 @@ Nameless
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg?style=flat
     :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
+
 
 An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
 
