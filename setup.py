@@ -48,7 +48,7 @@ class optional_build_ext(build_ext):
     def build_extension(self, ext):
         try:
             build_ext.build_extension(self, ext)
-        except (CCompilerError, CompileError, DistutilsExecError) as e:
+        except Exception as e:
             self._unavailable(e)
             self.extensions = []  # avoid copying missing files (it would fail).
 
@@ -112,7 +112,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'nameless = nameless.__main__:main',
+            'nameless = nameless.cli:main',
         ]
     },
     cmdclass={'build_ext': optional_build_ext},
