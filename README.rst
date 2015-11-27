@@ -1,8 +1,10 @@
 ========
-Nameless
+Overview
 ========
 
-  .. list-table:: Status badges:
+.. start-badges
+
+.. list-table::
     :stub-columns: 1
 
     * - docs
@@ -74,6 +76,8 @@ Nameless
     :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
+
+.. end-badges
 
 An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
 

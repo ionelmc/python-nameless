@@ -1,7 +1,6 @@
-Welcome to Nameless's documentation!
-======================================
-
-Contents:
+========
+Contents
+========
 
 .. toctree::
    :maxdepth: 2
