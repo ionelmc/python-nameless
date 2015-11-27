@@ -2,7 +2,7 @@
 Nameless
 ========
 
-.. list-table:: Status badges:
+  .. list-table:: Status badges:
     :stub-columns: 1
 
     * - docs
