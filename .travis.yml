@@ -10,22 +10,16 @@ env:
 
     - TOXENV=py26-cover,extension-coveralls,coveralls,codecov
     - TOXENV=py26-nocov
-
     - TOXENV=py27-cover,extension-coveralls,coveralls,codecov
     - TOXENV=py27-nocov
-
     - TOXENV=py33-cover,extension-coveralls,coveralls,codecov
     - TOXENV=py33-nocov
-
     - TOXENV=py34-cover,extension-coveralls,coveralls,codecov
     - TOXENV=py34-nocov
-
     - TOXENV=py35-cover,extension-coveralls,coveralls,codecov
     - TOXENV=py35-nocov
-
     - TOXENV=pypy-cover,extension-coveralls,coveralls,codecov
     - TOXENV=pypy-nocov
-
 before_install:
   - python --version
   - uname -a
