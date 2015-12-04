@@ -9,7 +9,7 @@ env:
     - TOXENV=check
 
 {% for env in tox_environments %}
-    - TOXENV={{ env }}{% if 'cover' in env %},coveralls,codecov{% endif %}
+    - TOXENV={{ env }}{% if 'cover' in env %},extension-coveralls,coveralls,codecov{% endif %}
 
 {% endfor %}
 

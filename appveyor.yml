@@ -11,72 +11,72 @@ environment:
       PYTHON_VERSION: '2.7'
       PYTHON_ARCH: '32'
 
-    - TOXENV: '2.7-cover,codecov'
+    - TOXENV: 'py27-cover,codecov'
       TOXPYTHON: C:\Python27\python.exe
       PYTHON_HOME: C:\Python27
       PYTHON_VERSION: '2.7'
       PYTHON_ARCH: '32'
-    - TOXENV: '2.7-nocov'
+    - TOXENV: 'py27-nocov'
       TOXPYTHON: C:\Python27\python.exe
       PYTHON_HOME: C:\Python27
       PYTHON_VERSION: '2.7'
       PYTHON_ARCH: '32'
 
-    - TOXENV: '2.7-cover,codecov'
+    - TOXENV: 'py27-cover,codecov'
       TOXPYTHON: C:\Python27-x64\python.exe
       WINDOWS_SDK_VERSION: v7.0
       PYTHON_HOME: C:\Python27-x64
       PYTHON_VERSION: '2.7'
       PYTHON_ARCH: '64'
-    - TOXENV: '2.7-nocov'
+    - TOXENV: 'py27-nocov'
       TOXPYTHON: C:\Python27-x64\python.exe
       WINDOWS_SDK_VERSION: v7.0
       PYTHON_HOME: C:\Python27-x64
       PYTHON_VERSION: '2.7'
       PYTHON_ARCH: '64'
 
-    - TOXENV: '3.4-cover,codecov'
+    - TOXENV: 'py34-cover,codecov'
       TOXPYTHON: C:\Python34\python.exe
       PYTHON_HOME: C:\Python34
       PYTHON_VERSION: '3.4'
       PYTHON_ARCH: '32'
-    - TOXENV: '3.4-nocov'
+    - TOXENV: 'py34-nocov'
       TOXPYTHON: C:\Python34\python.exe
       PYTHON_HOME: C:\Python34
       PYTHON_VERSION: '3.4'
       PYTHON_ARCH: '32'
 
-    - TOXENV: '3.4-cover,codecov'
+    - TOXENV: 'py34-cover,codecov'
       TOXPYTHON: C:\Python34-x64\python.exe
       WINDOWS_SDK_VERSION: v7.1
       PYTHON_HOME: C:\Python34-x64
       PYTHON_VERSION: '3.4'
       PYTHON_ARCH: '64'
-    - TOXENV: '3.4-nocov'
+    - TOXENV: 'py34-nocov'
       TOXPYTHON: C:\Python34-x64\python.exe
       WINDOWS_SDK_VERSION: v7.1
       PYTHON_HOME: C:\Python34-x64
       PYTHON_VERSION: '3.4'
       PYTHON_ARCH: '64'
 
-    - TOXENV: '3.5-cover,codecov'
+    - TOXENV: 'py35-cover,codecov'
       TOXPYTHON: C:\Python35\python.exe
       PYTHON_HOME: C:\Python35
       PYTHON_VERSION: '3.5'
       PYTHON_ARCH: '32'
-    - TOXENV: '3.5-nocov'
+    - TOXENV: 'py35-nocov'
       TOXPYTHON: C:\Python35\python.exe
       PYTHON_HOME: C:\Python35
       PYTHON_VERSION: '3.5'
       PYTHON_ARCH: '32'
 
-    - TOXENV: '3.5-cover,codecov'
+    - TOXENV: 'py35-cover,codecov'
       TOXPYTHON: C:\Python35-x64\python.exe
       WINDOWS_SDK_VERSION: v7.1
       PYTHON_HOME: C:\Python35-x64
       PYTHON_VERSION: '3.5'
       PYTHON_ARCH: '64'
-    - TOXENV: '3.5-nocov'
+    - TOXENV: 'py35-nocov'
       TOXPYTHON: C:\Python35-x64\python.exe
       WINDOWS_SDK_VERSION: v7.1
       PYTHON_HOME: C:\Python35-x64
@@ -103,5 +103,7 @@ on_failure:
   - ps: get-content .tox\*\log\*
 artifacts:
   - path: dist\*
-### To enable remote debugging uncomment this:
-#  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+### To enable remote debugging uncomment this (also, see: http://www.appveyor.com/docs/how-to/rdp-to-build-worker):
+# on_finish:
+#   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))

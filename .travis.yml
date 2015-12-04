@@ -8,20 +8,20 @@ env:
   matrix:
     - TOXENV=check
 
-    - TOXENV=2.6-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=2.6-nocov
+    - TOXENV=py26-cover,extension-coveralls,coveralls,codecov
+    - TOXENV=py26-nocov
 
-    - TOXENV=2.7-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=2.7-nocov
+    - TOXENV=py27-cover,extension-coveralls,coveralls,codecov
+    - TOXENV=py27-nocov
 
-    - TOXENV=3.3-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=3.3-nocov
+    - TOXENV=py33-cover,extension-coveralls,coveralls,codecov
+    - TOXENV=py33-nocov
 
-    - TOXENV=3.4-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=3.4-nocov
+    - TOXENV=py34-cover,extension-coveralls,coveralls,codecov
+    - TOXENV=py34-nocov
 
-    - TOXENV=3.5-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=3.5-nocov
+    - TOXENV=py35-cover,extension-coveralls,coveralls,codecov
+    - TOXENV=py35-nocov
 
     - TOXENV=pypy-cover,extension-coveralls,coveralls,codecov
     - TOXENV=pypy-nocov
