@@ -19,9 +19,9 @@ environment:
       PYTHON_ARCH: '32'
     - TOXENV: '{{ env }}{% if 'cover' in env %},codecov{% endif %}'
       TOXPYTHON: C:\Python{{ env[2:4] }}-x64\python.exe
-      {%- if not env.startswith('3.5') %}
+      {%- if env.startswith(('py33', 'py34')) %}
 
-      WINDOWS_SDK_VERSION: v7.{{ '1' if env[0] == '3' else '0' }}
+      WINDOWS_SDK_VERSION: v7.{{ '1' if env.startswith('py3') else '0' }}
       {%- endif %}
 
       PYTHON_HOME: C:\Python{{ env[2:4] }}-x64
