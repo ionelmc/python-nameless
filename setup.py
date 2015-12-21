@@ -15,11 +15,7 @@ from os.path import splitext
 from setuptools import find_packages
 from setuptools import setup
 from setuptools.command.build_ext import build_ext
-from distutils.core import Extension
-from distutils.errors import CCompilerError
-from distutils.errors import CompileError
-from distutils.errors import DistutilsExecError
-from distutils.errors import DistutilsPlatformError
+from setuptools import Extension
 
 
 def read(*names, **kwargs):
@@ -35,19 +31,11 @@ def read(*names, **kwargs):
 if 'TOXENV' in os.environ and 'SETUPPY_CFLAGS' in os.environ:
     os.environ['CFLAGS'] = os.environ['SETUPPY_CFLAGS']
 
-
 class optional_build_ext(build_ext):
-    '''Allow the building of C extensions to fail.'''
+    """Allow the building of C extensions to fail."""
     def run(self):
         try:
             build_ext.run(self)
-        except DistutilsPlatformError as e:
-            self._unavailable(e)
-            self.extensions = []  # avoid copying missing files (it would fail).
-
-    def build_extension(self, ext):
-        try:
-            build_ext.build_extension(self, ext)
         except Exception as e:
             self._unavailable(e)
             self.extensions = []  # avoid copying missing files (it would fail).
@@ -128,5 +116,5 @@ setup(
         )
         for root, _, _ in os.walk('src')
         for path in glob(join(root, '*.c'))
-    ]
+    ],
 )

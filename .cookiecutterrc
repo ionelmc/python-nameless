@@ -2,6 +2,8 @@
 
 cookiecutter:
     appveyor: 'yes'
+    bin_name: nameless
+    c_extension_cython: 'no'
     c_extension_optional: 'yes'
     c_extension_support: 'yes'
     codacy: 'yes'
