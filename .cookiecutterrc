@@ -18,8 +18,7 @@ cookiecutter:
     landscape: 'yes'
     package_name: nameless
     project_name: Nameless
-    project_short_description: An example package. Replace this with a proper project
-        description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
+    project_short_description: An example package. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
     release_date: today
     repo_name: python-nameless
     requiresio: 'yes'

@@ -31,6 +31,7 @@ def read(*names, **kwargs):
 if 'TOXENV' in os.environ and 'SETUPPY_CFLAGS' in os.environ:
     os.environ['CFLAGS'] = os.environ['SETUPPY_CFLAGS']
 
+
 class optional_build_ext(build_ext):
     """Allow the building of C extensions to fail."""
     def run(self):
@@ -54,14 +55,13 @@ class optional_build_ext(build_ext):
         print('    ' + repr(e))
         print('*' * 80)
 
-
 setup(
     name='nameless',
     version='0.1.0',
     license='BSD',
-    description='An example package. Replace this with a proper project description. Generated with https://github.com/ionelmc/cookiecutter-pylibrary',
+    description='An example package. Generated with https://github.com/ionelmc/cookiecutter-pylibrary',
     long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M|re.S).sub('', read('README.rst')),
+        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
     author='Ionel Cristian Mărieș',
@@ -81,7 +81,6 @@ setup(
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',

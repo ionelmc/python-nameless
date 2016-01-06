@@ -79,8 +79,7 @@ Overview
 
 .. end-badges
 
-An example package. Replace this with a proper project description. Generated with
-https://github.com/ionelmc/cookiecutter-pylibrary
+An example package. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
 
 * Free software: BSD license
 
