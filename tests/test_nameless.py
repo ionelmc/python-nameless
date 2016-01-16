@@ -1,7 +1,8 @@
 
 from click.testing import CliRunner
 
-from nameless.__main__ import main
+from nameless.cli import main
+import nameless
 
 
 def test_main():

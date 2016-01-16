@@ -2,7 +2,6 @@
 
 cookiecutter:
     appveyor: 'yes'
-    bin_name: nameless
     c_extension_cython: 'no'
     c_extension_optional: 'yes'
     c_extension_support: 'yes'
@@ -10,6 +9,7 @@ cookiecutter:
     codeclimate: 'yes'
     codecov: 'yes'
     command_line_interface: click
+    command_line_interface_bin_name: nameless
     coveralls: 'yes'
     distribution_name: nameless
     email: contact@ionelmc.ro
@@ -25,6 +25,7 @@ cookiecutter:
     scrutinizer: 'yes'
     sphinx_theme: sphinx-py3doc-enhanced-theme
     test_matrix_configurator: 'no'
+    test_matrix_separate_coverage: 'yes'
     test_runner: pytest
     travis: 'yes'
     version: 0.1.0
