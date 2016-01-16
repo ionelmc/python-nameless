@@ -3,8 +3,8 @@
 cookiecutter:
     appveyor: 'yes'
     c_extension_cython: 'no'
-    c_extension_optional: 'yes'
-    c_extension_support: 'yes'
+    c_extension_optional: 'no'
+    c_extension_support: 'no'
     codacy: 'yes'
     codeclimate: 'yes'
     codecov: 'yes'
