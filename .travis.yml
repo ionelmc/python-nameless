@@ -8,16 +8,11 @@ env:
   matrix:
     - TOXENV=check
 
-    - TOXENV=py27-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=py27-nocov
-    - TOXENV=py33-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=py33-nocov
-    - TOXENV=py34-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=py34-nocov
-    - TOXENV=py35-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=py35-nocov
-    - TOXENV=pypy-cover,extension-coveralls,coveralls,codecov
-    - TOXENV=pypy-nocov
+    - TOXENV=py27,extension-coveralls,coveralls,codecov
+    - TOXENV=py33,extension-coveralls,coveralls,codecov
+    - TOXENV=py34,extension-coveralls,coveralls,codecov
+    - TOXENV=py35,extension-coveralls,coveralls,codecov
+    - TOXENV=pypy,extension-coveralls,coveralls,codecov
 before_install:
   - python --version
   - uname -a
