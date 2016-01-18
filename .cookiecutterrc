@@ -23,6 +23,7 @@ cookiecutter:
     repo_name: python-nameless
     requiresio: 'yes'
     scrutinizer: 'yes'
+    sphinx_doctest: 'yes'
     sphinx_theme: sphinx-py3doc-enhanced-theme
     test_matrix_configurator: 'no'
     test_matrix_separate_coverage: 'no'

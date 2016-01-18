@@ -37,7 +37,8 @@ Development
 
 To set up `python-nameless` for local development:
 
-1. `Fork python-nameless on GitHub <https://github.com/ionelmc/python-nameless/fork>`_.
+1. Fork `python-nameless <https://github.com/ionelmc/python-nameless>`_
+   (look for the "Fork" button).
 2. Clone your fork locally::
 
     git clone git@github.com:your_name_here/python-nameless.git
