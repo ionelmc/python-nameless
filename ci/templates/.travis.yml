@@ -10,7 +10,7 @@ env:
     - TOXENV=docs
 {% for env in tox_environments %}{{ '' }}
     - TOXENV={{ env }},coveralls,codecov
-{%- endfor %}
+{% endfor %}
 
 before_install:
   - python --version
