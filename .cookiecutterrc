@@ -15,7 +15,7 @@ cookiecutter:
     email: contact@ionelmc.ro
     full_name: Ionel Cristian Mărieș
     github_username: ionelmc
-    landscape: 'yes'
+    landscape: 'no'
     package_name: nameless
     project_name: Nameless
     project_short_description: An example package. Generated with https://github.com/ionelmc/cookiecutter-pylibrary

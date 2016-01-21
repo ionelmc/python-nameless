@@ -12,7 +12,7 @@ Overview
     * - tests
       - | |travis| |appveyor| |requires|
         | |coveralls| |codecov|
-        | |landscape| |scrutinizer| |codacy| |codeclimate|
+        | |scrutinizer| |codacy| |codeclimate|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
@@ -39,10 +39,6 @@ Overview
 .. |codecov| image:: https://codecov.io/github/ionelmc/python-nameless/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
-
-.. |landscape| image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/ionelmc/python-nameless/master
-    :alt: Code Quality Status
 
 .. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg?style=flat
     :target: https://www.codacy.com/app/ionelmc/python-nameless
