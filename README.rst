@@ -89,7 +89,7 @@ Installation
 Documentation
 =============
 
-https://python-nameless.readthedocs.org/
+https://python-nameless.readthedocs.io/
 
 Development
 ===========

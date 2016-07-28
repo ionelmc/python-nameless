@@ -4,8 +4,10 @@ source =
    */site-packages/nameless
 
 [run]
-branch = True
-source = nameless
+branch = true
+source =
+    nameless
+    tests
 parallel = true
 
 [report]
