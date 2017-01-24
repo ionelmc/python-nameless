@@ -14,7 +14,8 @@ Overview
         | |coveralls| |codecov|
         | |scrutinizer| |codacy| |codeclimate|
     * - package
-      - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
+      - | |version| |downloads| |wheel| |supported-versions| |supported-implementations|
+        | |commits-since|
 
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless
@@ -51,6 +52,10 @@ Overview
 .. |version| image:: https://img.shields.io/pypi/v/nameless.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/nameless
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/nameless/0.1.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/ionelmc/nameless/compare/0.1.0...master
 
 .. |downloads| image:: https://img.shields.io/pypi/dm/nameless.svg?style=flat
     :alt: PyPI Package monthly downloads
