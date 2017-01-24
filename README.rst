@@ -53,9 +53,9 @@ Overview
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/nameless
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/nameless/0.1.0.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/0.1.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/ionelmc/nameless/compare/0.1.0...master
+    :target: https://github.com/ionelmc/python-nameless/compare/0.1.0...master
 
 .. |downloads| image:: https://img.shields.io/pypi/dm/nameless.svg?style=flat
     :alt: PyPI Package monthly downloads
