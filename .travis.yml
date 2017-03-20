@@ -34,6 +34,7 @@ matrix:
     - python: 'pypy'
       env:
         - TOXENV=pypy,report,coveralls,codecov
+
 before_install:
   - python --version
   - uname -a
