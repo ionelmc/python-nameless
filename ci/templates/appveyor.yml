@@ -12,7 +12,7 @@ environment:
       PYTHON_VERSION: '2.7'
       PYTHON_ARCH: '32'
 {% for env in tox_environments %}{{ '' }}{% if env.startswith(('py2', 'py3')) %}
-    - TOXENV: '{{ env }},codecov'
+    - TOXENV: '{{ env }},report,codecov'
       TOXPYTHON: C:\Python{{ env[2:4] }}\python.exe
       PYTHON_HOME: C:\Python{{ env[2:4] }}
       PYTHON_VERSION: '{{ env[2] }}.{{ env[3] }}'
