@@ -34,12 +34,11 @@ extlinks = {
     'issue': ('https://github.com/ionelmc/python-nameless/issues/%s', '#'),
     'pr': ('https://github.com/ionelmc/python-nameless/pull/%s', 'PR #'),
 }
-import sphinx_py3doc_enhanced_theme
-html_theme = "sphinx_py3doc_enhanced_theme"
-html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
-html_theme_options = {
-    'githuburl': 'https://github.com/ionelmc/python-nameless/'
-}
+# on_rtd is whether we are on readthedocs.org
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only set the theme if we're building docs locally
+    html_theme = 'sphinx_rtd_theme'
 
 html_use_smartypants = True
 html_last_updated_fmt = '%b %d, %Y'

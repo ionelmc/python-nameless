@@ -11,8 +11,7 @@ Overview
       - |docs|
     * - tests
       - | |travis| |appveyor| |requires|
-        | |coveralls| |codecov|
-        | |scrutinizer| |codacy| |codeclimate|
+        | |codecov|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
@@ -33,21 +32,9 @@ Overview
     :alt: Requirements Status
     :target: https://requires.io/github/ionelmc/python-nameless/requirements/?branch=master
 
-.. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=master&service=github
-    :alt: Coverage Status
-    :target: https://coveralls.io/r/ionelmc/python-nameless
-
 .. |codecov| image:: https://codecov.io/github/ionelmc/python-nameless/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
-
-.. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg
-    :target: https://www.codacy.com/app/ionelmc/python-nameless
-    :alt: Codacy Code Quality Status
-
-.. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-nameless/badges/gpa.svg
-   :target: https://codeclimate.com/github/ionelmc/python-nameless
-   :alt: CodeClimate Quality Status
 
 .. |version| image:: https://img.shields.io/pypi/v/nameless.svg
     :alt: PyPI Package latest release
@@ -69,16 +56,12 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.python.org/pypi/nameless
 
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg
-    :alt: Scrutinizer Status
-    :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
-
 
 .. end-badges
 
-An example package. Generated with https://github.com/ionelmc/cookiecutter-pylibrary
+An example package. Generated with cookiecutter-pylibrary.
 
-* Free software: BSD license
+* Free software: BSD 2-Clause License
 
 Installation
 ============
