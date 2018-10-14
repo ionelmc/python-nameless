@@ -20,6 +20,7 @@ Overview
     :target: https://readthedocs.org/projects/python-nameless
     :alt: Documentation Status
 
+
 .. |travis| image:: https://travis-ci.org/ionelmc/python-nameless.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/ionelmc/python-nameless
@@ -73,7 +74,9 @@ Installation
 Documentation
 =============
 
+
 https://python-nameless.readthedocs.io/
+
 
 Development
 ===========

@@ -27,6 +27,7 @@ cookiecutter:
     repo_name: python-nameless
     requiresio: yes
     scrutinizer: no
+    sphinx_docs: yes
     sphinx_doctest: no
     sphinx_theme: sphinx-rtd-theme
     test_matrix_configurator: no
