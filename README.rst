@@ -39,7 +39,7 @@ Overview
 
 .. |version| image:: https://img.shields.io/pypi/v/nameless.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/nameless
+    :target: https://pypi.org/project/nameless
 
 .. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/v0.1.0.svg
     :alt: Commits since latest release
@@ -47,15 +47,15 @@ Overview
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/nameless.svg
     :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/nameless
+    :target: https://pypi.org/project/nameless
 
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/nameless.svg
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/nameless
+    :target: https://pypi.org/project/nameless
 
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/nameless.svg
     :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/nameless
+    :target: https://pypi.org/project/nameless
 
 
 .. end-badges
