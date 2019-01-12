@@ -15,11 +15,9 @@ Overview
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
-
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless
     :alt: Documentation Status
-
 
 .. |travis| image:: https://travis-ci.org/ionelmc/python-nameless.svg?branch=master
     :alt: Travis-CI Build Status
