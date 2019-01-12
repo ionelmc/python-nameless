@@ -4,6 +4,7 @@ from __future__ import absolute_import
 from __future__ import print_function
 
 import io
+
 import re
 from glob import glob
 from os.path import basename
@@ -63,10 +64,15 @@ setup(
         # 'Programming Language :: Python :: Implementation :: Stackless',
         'Topic :: Utilities',
     ],
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    project_urls = {
+        'Documentation': 'https://python-nameless.readthedocs.io/',
+        'Changelog': 'https://python-nameless.readthedocs.io/en/latest/changelog.html',
+        'Issue Tracker': 'https://github.com/ionelmc/python-nameless/issues',
+    },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
+    python_requires = '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     install_requires=[
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
