@@ -64,7 +64,7 @@ setup(
         # 'Programming Language :: Python :: Implementation :: Stackless',
         'Topic :: Utilities',
     ],
-    project_urls = {
+    project_urls={
         'Documentation': 'https://python-nameless.readthedocs.io/',
         'Changelog': 'https://python-nameless.readthedocs.io/en/latest/changelog.html',
         'Issue Tracker': 'https://github.com/ionelmc/python-nameless/issues',
@@ -72,7 +72,7 @@ setup(
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
-    python_requires = '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     install_requires=[
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
