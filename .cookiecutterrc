@@ -42,7 +42,7 @@ cookiecutter:
     test_matrix_configurator: no
     test_matrix_separate_coverage: no
     test_runner: pytest
-    test_runner_setup_requires: no
+    test_runner_setup_requires: yes
     travis: yes
     version: 0.1.0
     website: https://blog.ionelmc.ro
