@@ -12,27 +12,28 @@ matrix:
     - python: '3.6'
       env:
         - TOXENV=docs
-    - python: '2.7'
-      env:
-        - TOXENV=py27,report,codecov
-    - python: '3.4'
-      env:
-        - TOXENV=py34,report,codecov
-    - python: '3.5'
-      env:
-        - TOXENV=py35,report,codecov
-    - python: '3.6'
-      env:
-        - TOXENV=py36,report,codecov
-    - python: '3.7'
-      env:
-        - TOXENV=py37,report,codecov
-    - python: 'pypy2.7-6.0'
-      env:
-        - TOXENV=pypy,report,codecov
-    - python: 'pypy3.5-6.0'
-      env:
-        - TOXENV=pypy3,report,codecov
+    - env:
+        - TOXENV=py27,codecov
+      python: '2.7'
+    - env:
+        - TOXENV=py34,codecov
+      python: '3.4'
+    - env:
+        - TOXENV=py35,codecov
+      python: '3.5'
+    - env:
+        - TOXENV=py36,codecov
+      python: '3.6'
+    - env:
+        - TOXENV=py37,codecov
+      python: '3.7'
+    - env:
+        - TOXENV=pypy,codecov
+      python: 'pypy2.7-6.0'
+    - env:
+        - TOXENV=pypy3,codecov
+        - TOXPYTHON=pypy3
+      python: 'pypy3.5-6.0'
 before_install:
   - python --version
   - uname -a

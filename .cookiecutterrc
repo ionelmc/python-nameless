@@ -9,16 +9,21 @@ cookiecutter:
     c_extension_module: _nameless
     c_extension_optional: no
     c_extension_support: no
+    c_extension_test_pypi: no
+    c_extension_test_pypi_appveyor_secret: '[Get encrypted password from https://ci.appveyor.com/account/ionelmc/tools/encrypt]'
+    c_extension_test_pypi_travis_secret: "# The password should be set in https://travis-ci.org/ionelmc/python-nameless/settings\n    # Alternatively you can run this shell oneliner if you got travis gem installed:\n    #\n    #   echo -n \"Password:\"; (read -s p; echo -n TWINE_PASSWORD=$p) | travis encrypt --add=env.global --repo=ionelmc/python-nameless"
+    c_extension_test_pypi_username: ionelmc
     codacy: no
+    codacy_projectid: 862e7946eabb4112be6503a667381b71
     codeclimate: no
     codecov: yes
     command_line_interface: plain
     command_line_interface_bin_name: nameless
     coveralls: no
+    coveralls_token: IoRlAEvnKbwbhBJ2jrWPqzAnE2jobA0I3
     distribution_name: nameless
     email: contact@ionelmc.ro
     full_name: Ionel Cristian Mărieș
-    github_username: ionelmc
     landscape: no
     license: BSD 2-Clause License
     linter: flake8
@@ -26,7 +31,9 @@ cookiecutter:
     project_name: Nameless
     project_short_description: An example package. Generated with cookiecutter-pylibrary.
     release_date: today
+    repo_hosting: github
     repo_name: python-nameless
+    repo_username: ionelmc
     requiresio: yes
     scrutinizer: no
     sphinx_docs: yes
@@ -35,6 +42,7 @@ cookiecutter:
     test_matrix_configurator: no
     test_matrix_separate_coverage: no
     test_runner: pytest
+    test_runner_setup_requires: no
     travis: yes
     version: 0.1.0
     website: https://blog.ionelmc.ro
