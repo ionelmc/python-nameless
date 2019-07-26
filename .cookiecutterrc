@@ -11,7 +11,7 @@ cookiecutter:
     c_extension_support: no
     c_extension_test_pypi: no
     c_extension_test_pypi_appveyor_secret: '[Get encrypted password from https://ci.appveyor.com/account/ionelmc/tools/encrypt]'
-    c_extension_test_pypi_travis_secret: "# The password should be set in https://travis-ci.org/ionelmc/python-nameless/settings\n    # Alternatively you can run this shell oneliner if you got travis gem installed:\n    #\n    #   echo -n \"Password:\"; (read -s p; echo -n TWINE_PASSWORD=$p) | travis encrypt --add=env.global --repo=ionelmc/python-nameless"
+    c_extension_test_pypi_travis_secret: '# The password should be set in https://travis-ci.org/ionelmc/python-nameless/settings\n    # Alternatively you can run this shell oneliner if you got travis gem installed:\n    #\n    #   echo -n \"Password:\"; (read -s p; echo -n TWINE_PASSWORD=$p) | travis encrypt --add=env.global --repo=ionelmc/python-nameless'
     c_extension_test_pypi_username: ionelmc
     codacy: no
     codacy_projectid: 862e7946eabb4112be6503a667381b71
