@@ -1,5 +1,6 @@
 language: python
 dist: xenial
+cache: false
 env:
   global:
     - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
@@ -37,9 +38,9 @@ matrix:
 before_install:
   - python --version
   - uname -a
-  - lsb_release -a
+  - lsb_release -a || true
 install:
-  - pip install tox
+  - python -mpip install --progress-bar=off --verbose tox -rci/requirements.txt
   - virtualenv --version
   - easy_install --version
   - pip --version

@@ -26,7 +26,7 @@ def read(*names, **kwargs):
 setup(
     name='nameless',
     version='0.1.0',
-    license='BSD 2-Clause License',
+    license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
@@ -81,7 +81,6 @@ setup(
         #   ':python_version=="2.6"': ['argparse'],
     },
     setup_requires=[
-        'pytest-runner',
     ],
     entry_points={
         'console_scripts': [
