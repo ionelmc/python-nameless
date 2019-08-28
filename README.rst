@@ -20,7 +20,7 @@ Overview
     :target: https://readthedocs.org/projects/python-nameless
     :alt: Documentation Status
 
-.. |travis| image:: https://travis-ci.org/ionelmc/python-nameless.svg?branch=master
+.. |travis| image:: https://api.travis-ci.org/ionelmc/python-nameless.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/ionelmc/python-nameless
 
@@ -72,7 +72,7 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/nameless
 
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/quality/g/ionelmc/python-nameless/master.svg
     :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
