@@ -11,7 +11,8 @@ Overview
       - |docs|
     * - tests
       - | |travis| |appveyor| |requires|
-        | |codecov|
+        | |coveralls| |codecov|
+        | |landscape| |scrutinizer| |codacy| |codeclimate|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
@@ -31,9 +32,25 @@ Overview
     :alt: Requirements Status
     :target: https://requires.io/github/ionelmc/python-nameless/requirements/?branch=master
 
+.. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=master&service=github
+    :alt: Coverage Status
+    :target: https://coveralls.io/r/ionelmc/python-nameless
+
 .. |codecov| image:: https://codecov.io/github/ionelmc/python-nameless/coverage.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
+
+.. |landscape| image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.svg?style=flat
+    :target: https://landscape.io/github/ionelmc/python-nameless/master
+    :alt: Code Quality Status
+
+.. |codacy| image:: https://img.shields.io/codacy/grade/862e7946eabb4112be6503a667381b71.svg
+    :target: https://www.codacy.com/app/ionelmc/python-nameless
+    :alt: Codacy Code Quality Status
+
+.. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-nameless/badges/gpa.svg
+   :target: https://codeclimate.com/github/ionelmc/python-nameless
+   :alt: CodeClimate Quality Status
 
 .. |version| image:: https://img.shields.io/pypi/v/nameless.svg
     :alt: PyPI Package latest release
@@ -54,6 +71,10 @@ Overview
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/nameless.svg
     :alt: Supported implementations
     :target: https://pypi.org/project/nameless
+
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/ionelmc/python-nameless/master.svg
+    :alt: Scrutinizer Status
+    :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
 
 .. end-badges

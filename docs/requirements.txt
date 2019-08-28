@@ -1,2 +1,2 @@
 sphinx>=1.3
-sphinx-rtd-theme
+sphinx-py3doc-enhanced-theme

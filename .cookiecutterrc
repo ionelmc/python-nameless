@@ -3,27 +3,27 @@
 cookiecutter:
     _extensions:
     -   jinja2_time.TimeExtension
-    _template: cookiecutter-pylibrary
-    allow_tests_inside_package: no
+    _template: /home/ionel/open-source/cookiecutter-pylibrary
+    allow_tests_inside_package: yes
     appveyor: yes
     c_extension_function: longest
     c_extension_module: _nameless
-    c_extension_optional: no
-    c_extension_support: no
-    c_extension_test_pypi: no
-    c_extension_test_pypi_username: ionelmc
-    codacy: no
+    c_extension_optional: yes
+    c_extension_support: yes
+    c_extension_test_pypi: yes
+    c_extension_test_pypi_username: ionel
+    codacy: yes
     codacy_projectid: 862e7946eabb4112be6503a667381b71
-    codeclimate: no
+    codeclimate: yes
     codecov: yes
-    command_line_interface: plain
+    command_line_interface: click
     command_line_interface_bin_name: nameless
-    coveralls: no
+    coveralls: yes
     coveralls_token: IoRlAEvnKbwbhBJ2jrWPqzAnE2jobA0I3
     distribution_name: nameless
     email: contact@ionelmc.ro
     full_name: Ionel Cristian Mărieș
-    landscape: no
+    landscape: yes
     license: BSD 2-Clause License
     linter: flake8
     package_name: nameless
@@ -34,17 +34,17 @@ cookiecutter:
     repo_name: python-nameless
     repo_username: ionelmc
     requiresio: yes
-    scrutinizer: no
-    setup_py_uses_setuptools_scm: no
-    setup_py_uses_test_runner: no
+    scrutinizer: yes
+    setup_py_uses_setuptools_scm: yes
+    setup_py_uses_test_runner: yes
     sphinx_docs: yes
-    sphinx_doctest: no
-    sphinx_theme: sphinx-rtd-theme
+    sphinx_doctest: yes
+    sphinx_theme: sphinx-py3doc-enhanced-theme
     test_matrix_configurator: no
-    test_matrix_separate_coverage: no
+    test_matrix_separate_coverage: yes
     test_runner: pytest
     travis: yes
-    travis_osx: no
+    travis_osx: yes
     version: 0.1.0
     website: https://blog.ionelmc.ro
     year_from: '2019'
