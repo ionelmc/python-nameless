@@ -30,7 +30,8 @@ cookiecutter:
     project_name: Nameless
     project_short_description: An example package. Generated with cookiecutter-pylibrary.
     release_date: today
-    repo_hosting: github
+    repo_hosting: github.com
+    repo_hosting_domain: github.com
     repo_name: python-nameless
     repo_username: ionelmc
     requiresio: yes
@@ -38,6 +39,7 @@ cookiecutter:
     setup_py_uses_setuptools_scm: yes
     setup_py_uses_test_runner: yes
     sphinx_docs: yes
+    sphinx_docs_hosting: https://python-nameless.readthedocs.io/
     sphinx_doctest: yes
     sphinx_theme: sphinx-py3doc-enhanced-theme
     test_matrix_configurator: no
