@@ -29,6 +29,8 @@ cookiecutter:
     package_name: nameless
     project_name: Nameless
     project_short_description: An example package. Generated with cookiecutter-pylibrary.
+    pypi_badge: yes
+    pypi_disable_upload: no
     release_date: today
     repo_hosting: github.com
     repo_hosting_domain: github.com

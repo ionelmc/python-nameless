@@ -56,10 +56,6 @@ Overview
     :alt: PyPI Package latest release
     :target: https://pypi.org/project/nameless
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/v0.1.0.svg
-    :alt: Commits since latest release
-    :target: https://github.com/ionelmc/python-nameless/compare/v0.1.0...master
-
 .. |wheel| image:: https://img.shields.io/pypi/wheel/nameless.svg
     :alt: PyPI Wheel
     :target: https://pypi.org/project/nameless
@@ -71,6 +67,11 @@ Overview
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/nameless.svg
     :alt: Supported implementations
     :target: https://pypi.org/project/nameless
+
+.. |commits-since| image:: https://img.shields.io/github.com/commits-since/ionelmc/python-nameless/v0.1.0.svg
+    :alt: Commits since latest release
+    :target: https://github.com/ionelmc/python-nameless/compare/v0.1.0...master
+
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/quality/g/ionelmc/python-nameless/master.svg
     :alt: Scrutinizer Status
@@ -89,6 +90,11 @@ Installation
 ::
 
     pip install nameless
+
+You can also install the in-development version with::
+
+    pip install https://github.com/ionelmc/python-nameless/archive/master.zip
+
 
 Documentation
 =============
