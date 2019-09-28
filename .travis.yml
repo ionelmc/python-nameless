@@ -90,18 +90,16 @@ matrix:
       python: '3.7'
     - env:
         - TOXENV=pypy-cover,codecov,extension-coveralls,coveralls
-      python: 'pypy2.7-6.0'
+      python: 'pypy'
     - env:
         - TOXENV=pypy-nocov
-      python: 'pypy2.7-6.0'
+      python: 'pypy'
     - env:
         - TOXENV=pypy3-cover,codecov,extension-coveralls,coveralls
-        - TOXPYTHON=pypy3
-      python: 'pypy3.5-6.0'
+      python: 'pypy3'
     - env:
         - TOXENV=pypy3-nocov
-        - TOXPYTHON=pypy3
-      python: 'pypy3.5-6.0'
+      python: 'pypy3'
 before_install:
   - python --version
   - uname -a
