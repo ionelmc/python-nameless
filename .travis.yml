@@ -16,10 +16,6 @@ matrix:
         - TOXENV=docs
     - os: osx
       language: generic
-      cache:
-        directories:
-          - $HOME/Library/Caches/Homebrew
-          - $HOME/Library/Caches/pip
       env:
         - TOXENV=py27-cover
     - env:
@@ -27,10 +23,6 @@ matrix:
       python: '2.7'
     - os: osx
       language: generic
-      cache:
-        directories:
-          - $HOME/Library/Caches/Homebrew
-          - $HOME/Library/Caches/pip
       env:
         - TOXENV=py27-nocov
         - WHEEL_PATH=.tox/dist
@@ -39,14 +31,6 @@ matrix:
         - WHEEL_MANYLINUX1=cp27
         - WHEEL_PATH=wheelhouse
       python: '2.7'
-    - env:
-        - TOXENV=py34-cover,codecov,extension-coveralls,coveralls
-      python: '3.4'
-    - env:
-        - TOXENV=py34-nocov
-        - WHEEL_MANYLINUX1=cp34
-        - WHEEL_PATH=wheelhouse
-      python: '3.4'
     - env:
         - TOXENV=py35-cover,codecov,extension-coveralls,coveralls
       python: '3.5'
@@ -65,10 +49,6 @@ matrix:
       python: '3.6'
     - os: osx
       language: generic
-      cache:
-        directories:
-          - $HOME/Library/Caches/Homebrew
-          - $HOME/Library/Caches/pip
       env:
         - TOXENV=py37-cover
     - env:
@@ -76,10 +56,6 @@ matrix:
       python: '3.7'
     - os: osx
       language: generic
-      cache:
-        directories:
-          - $HOME/Library/Caches/Homebrew
-          - $HOME/Library/Caches/pip
       env:
         - TOXENV=py37-nocov
         - WHEEL_PATH=.tox/dist

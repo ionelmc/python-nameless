@@ -12,15 +12,13 @@ from os.path import dirname
 from os.path import exists
 from os.path import join
 
-import jinja2
-
-
 base_path = dirname(dirname(abspath(__file__)))
 
 
 def check_call(args):
     print("+", *args)
     subprocess.check_call(args)
+
 
 def exec_in_env():
     env_path = join(base_path, ".tox", "bootstrap")
@@ -50,6 +48,8 @@ def exec_in_env():
     os.execv(python_executable, [python_executable, __file__, "--no-env"])
 
 def main():
+    import jinja2
+
     print("Project path: {0}".format(base_path))
 
     jinja = jinja2.Environment(
@@ -75,6 +75,7 @@ def main():
             fh.write(jinja.get_template(name).render(tox_environments=tox_environments))
         print("Wrote {}".format(name))
     print("DONE.")
+
 
 if __name__ == "__main__":
     args = sys.argv[1:]

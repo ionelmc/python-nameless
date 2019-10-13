@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 import os
-
+import traceback
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -15,18 +15,18 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
 ]
-if os.getenv('SPELLCHECK'):
-    extensions += 'sphinxcontrib.spelling',
-    spelling_show_suggestions = True
-    spelling_lang = 'en_US'
-
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'Nameless'
 year = '2019'
 author = 'Ionel Cristian Mărieș'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.1.0'
+try:
+    from pkg_resources import get_distribution
+    version = release = get_distribution('nameless').version
+except Exception:
+    traceback.print_exc()
+    version = release = '0.1.0'
 
 pygments_style = 'trac'
 templates_path = ['.']

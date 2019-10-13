@@ -18,10 +18,6 @@ matrix:
 {%- if 'py37' in env or 'py27' in env %}{{ '' }}
     - os: osx
       language: generic
-      cache:
-        directories:
-          - $HOME/Library/Caches/Homebrew
-          - $HOME/Library/Caches/pip
       env:
         - TOXENV={{ env }}
 {%- if 'nocov' in env %}{{ '' }}
