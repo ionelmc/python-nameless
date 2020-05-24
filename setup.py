@@ -93,6 +93,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         # uncomment if you test on these interpreters:
@@ -133,6 +134,7 @@ setup(
         Extension(
             splitext(relpath(path, 'src').replace(os.sep, '.'))[0],
             sources=[path],
+            extra_compile_args=os.environ.get('SETUPPY_CFLAGS', '').split(),
             include_dirs=[dirname(path)]
         )
         for root, _, _ in os.walk('src')

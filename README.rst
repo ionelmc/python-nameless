@@ -36,7 +36,7 @@ Overview
     :alt: Coverage Status
     :target: https://coveralls.io/r/ionelmc/python-nameless
 
-.. |codecov| image:: https://codecov.io/github/ionelmc/python-nameless/coverage.svg?branch=master
+.. |codecov| image:: https://codecov.io/gh/ionelmc/python-nameless/branch/master/graphs/badge.svg?branch=master
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
 

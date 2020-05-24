@@ -5,6 +5,7 @@ env:
   global:
     - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
     - SEGFAULT_SIGNALS=all
+    - LC_ALL=en_US.UTF-8
     - TWINE_USERNAME=ionel
 matrix:
   include:
@@ -64,6 +65,14 @@ matrix:
         - WHEEL_MANYLINUX1=cp37
         - WHEEL_PATH=wheelhouse
       python: '3.7'
+    - env:
+        - TOXENV=py38-cover,codecov,extension-coveralls,coveralls
+      python: '3.8'
+    - env:
+        - TOXENV=py38-nocov
+        - WHEEL_MANYLINUX1=cp38
+        - WHEEL_PATH=wheelhouse
+      python: '3.8'
     - env:
         - TOXENV=pypy-cover,codecov,extension-coveralls,coveralls
       python: 'pypy'

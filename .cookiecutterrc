@@ -27,6 +27,7 @@ cookiecutter:
     license: BSD 2-Clause License
     linter: flake8
     package_name: nameless
+    pre_commit: yes
     project_name: Nameless
     project_short_description: An example package. Generated with cookiecutter-pylibrary.
     pypi_badge: yes
@@ -43,7 +44,7 @@ cookiecutter:
     sphinx_docs: yes
     sphinx_docs_hosting: https://python-nameless.readthedocs.io/
     sphinx_doctest: yes
-    sphinx_theme: sphinx-py3doc-enhanced-theme
+    sphinx_theme: sphinx-rtd-theme
     test_matrix_configurator: no
     test_matrix_separate_coverage: yes
     test_runner: pytest
