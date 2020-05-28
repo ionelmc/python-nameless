@@ -4,19 +4,19 @@ cookiecutter:
     _extensions:
     -   jinja2_time.TimeExtension
     _template: /home/ionel/open-source/cookiecutter-pylibrary
-    allow_tests_inside_package: yes
+    allow_tests_inside_package: no
     appveyor: yes
     c_extension_function: longest
     c_extension_module: _nameless
     c_extension_optional: yes
-    c_extension_support: yes
+    c_extension_support: cython
     c_extension_test_pypi: yes
     c_extension_test_pypi_username: ionel
     codacy: yes
     codacy_projectid: 862e7946eabb4112be6503a667381b71
     codeclimate: yes
     codecov: yes
-    command_line_interface: click
+    command_line_interface: argparse
     command_line_interface_bin_name: nameless
     coveralls: yes
     coveralls_token: IoRlAEvnKbwbhBJ2jrWPqzAnE2jobA0I3
@@ -40,7 +40,7 @@ cookiecutter:
     requiresio: yes
     scrutinizer: yes
     setup_py_uses_setuptools_scm: yes
-    setup_py_uses_test_runner: yes
+    setup_py_uses_test_runner: no
     sphinx_docs: yes
     sphinx_docs_hosting: https://python-nameless.readthedocs.io/
     sphinx_doctest: yes
@@ -53,4 +53,4 @@ cookiecutter:
     version: 0.1.0
     website: https://blog.ionelmc.ro
     year_from: '2019'
-    year_to: '2019'
+    year_to: '2020'

@@ -18,7 +18,7 @@ extensions = [
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'Nameless'
-year = '2019'
+year = '2019-2020'
 author = 'Ionel Cristian Mărieș'
 copyright = '{0}, {1}'.format(year, author)
 try:

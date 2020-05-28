@@ -18,6 +18,13 @@ from setuptools import find_packages
 from setuptools import setup
 from setuptools.command.build_ext import build_ext
 
+try:
+    # Allow installing package without any Cython available. This
+    # assumes you are going to include the .c files in your sdist.
+    import Cython
+except ImportError:
+    Cython = None
+
 
 def read(*names, **kwargs):
     with io.open(
@@ -112,7 +119,6 @@ setup(
     ],
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
     install_requires=[
-        'click',
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
     extras_require={
@@ -121,7 +127,9 @@ setup(
         #   ':python_version=="2.6"': ['argparse'],
     },
     setup_requires=[
-        'pytest-runner',
+        'setuptools_scm>=3.3.1',
+        'cython',
+    ] if Cython else [
         'setuptools_scm>=3.3.1',
     ],
     entry_points={
@@ -138,6 +146,6 @@ setup(
             include_dirs=[dirname(path)]
         )
         for root, _, _ in os.walk('src')
-        for path in glob(join(root, '*.c'))
+        for path in glob(join(root, '*.pyx' if Cython else '*.c'))
     ],
 )

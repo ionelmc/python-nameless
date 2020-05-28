@@ -5,7 +5,7 @@ env:
   global:
     - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
     - SEGFAULT_SIGNALS=all
-    - LC_ALL=en_US.UTF-8
+    - LANG=en_US.UTF-8
     - TWINE_USERNAME=ionel
 matrix:
   include:
@@ -16,6 +16,7 @@ matrix:
       env:
         - TOXENV=docs
     - os: osx
+      osx_image: xcode11
       language: generic
       env:
         - TOXENV=py27-cover
@@ -23,6 +24,7 @@ matrix:
         - TOXENV=py27-cover,codecov,extension-coveralls,coveralls
       python: '2.7'
     - os: osx
+      osx_image: xcode11
       language: generic
       env:
         - TOXENV=py27-nocov
@@ -49,6 +51,7 @@ matrix:
         - WHEEL_PATH=wheelhouse
       python: '3.6'
     - os: osx
+      osx_image: xcode11
       language: generic
       env:
         - TOXENV=py37-cover
@@ -56,6 +59,7 @@ matrix:
         - TOXENV=py37-cover,codecov,extension-coveralls,coveralls
       python: '3.7'
     - os: osx
+      osx_image: xcode11
       language: generic
       env:
         - TOXENV=py37-nocov

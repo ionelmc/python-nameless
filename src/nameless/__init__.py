@@ -1,3 +1,6 @@
 __version__ = '0.1.0'
-
-from ._nameless import longest  # noqa
+try:
+    from ._nameless import longest  # noqa
+except ImportError:
+    def longest(args):
+        return max(args, key=len)
