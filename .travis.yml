@@ -50,28 +50,28 @@ matrix:
         - WHEEL_MANYLINUX1=cp36
         - WHEEL_PATH=wheelhouse
       python: '3.6'
-    - os: osx
-      osx_image: xcode11
-      language: generic
-      env:
-        - TOXENV=py37-cover
     - env:
         - TOXENV=py37-cover,codecov,extension-coveralls,coveralls
       python: '3.7'
-    - os: osx
-      osx_image: xcode11
-      language: generic
-      env:
-        - TOXENV=py37-nocov
-        - WHEEL_PATH=.tox/dist
     - env:
         - TOXENV=py37-nocov
         - WHEEL_MANYLINUX1=cp37
         - WHEEL_PATH=wheelhouse
       python: '3.7'
+    - os: osx
+      osx_image: xcode11
+      language: generic
+      env:
+        - TOXENV=py38-cover
     - env:
         - TOXENV=py38-cover,codecov,extension-coveralls,coveralls
       python: '3.8'
+    - os: osx
+      osx_image: xcode11
+      language: generic
+      env:
+        - TOXENV=py38-nocov
+        - WHEEL_PATH=.tox/dist
     - env:
         - TOXENV=py38-nocov
         - WHEEL_MANYLINUX1=cp38
@@ -122,8 +122,8 @@ script:
     fi
     )
 after_failure:
-  - more .tox/log/* | cat
-  - more .tox/*/log/* | cat
+  - cat .tox/log/*
+  - cat .tox/*/log/*
 notifications:
   email:
     on_success: never

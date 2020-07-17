@@ -37,8 +37,13 @@ def read(*names, **kwargs):
 # Enable code coverage for C code: we can't use CFLAGS=-coverage in tox.ini, since that may mess with compiling
 # dependencies (e.g. numpy). Therefore we set SETUPPY_CFLAGS=-coverage in tox.ini and copy it to CFLAGS here (after
 # deps have been safely installed).
-if 'TOXENV' in os.environ and 'SETUPPY_CFLAGS' in os.environ:
-    os.environ['CFLAGS'] = os.environ['SETUPPY_CFLAGS']
+if 'TOX_ENV_NAME' in os.environ and os.environ.get('SETUP_PY_EXT_COVERAGE') == 'yes':
+    CFLAGS = os.environ['CFLAGS'] = '-DCYTHON_TRACE=1'
+    LFLAGS = os.environ['LFLAGS'] = ''
+else:
+    CFLAGS = ''
+    LFLAGS = ''
+
 
 
 class optional_build_ext(build_ext):
@@ -142,7 +147,8 @@ setup(
         Extension(
             splitext(relpath(path, 'src').replace(os.sep, '.'))[0],
             sources=[path],
-            extra_compile_args=os.environ.get('SETUPPY_CFLAGS', '').split(),
+            extra_compile_args=CFLAGS.split(),
+            extra_link_args=LFLAGS.split(),
             include_dirs=[dirname(path)]
         )
         for root, _, _ in os.walk('src')
