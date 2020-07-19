@@ -25,15 +25,6 @@ try:
 except ImportError:
     Cython = None
 
-
-def read(*names, **kwargs):
-    with io.open(
-        join(dirname(__file__), *names),
-        encoding=kwargs.get('encoding', 'utf8')
-    ) as fh:
-        return fh.read()
-
-
 # Enable code coverage for C code: we can't use CFLAGS=-coverage in tox.ini, since that may mess with compiling
 # dependencies (e.g. numpy). Therefore we set SETUPPY_CFLAGS=-coverage in tox.ini and copy it to CFLAGS here (after
 # deps have been safely installed).
@@ -43,7 +34,6 @@ if 'TOX_ENV_NAME' in os.environ and os.environ.get('SETUP_PY_EXT_COVERAGE') == '
 else:
     CFLAGS = ''
     LFLAGS = ''
-
 
 
 class optional_build_ext(build_ext):
@@ -68,6 +58,14 @@ class optional_build_ext(build_ext):
         print('')
         print('    ' + repr(e))
         print('*' * 80)
+
+
+def read(*names, **kwargs):
+    with io.open(
+        join(dirname(__file__), *names),
+        encoding=kwargs.get('encoding', 'utf8')
+    ) as fh:
+        return fh.read()
 
 
 setup(
