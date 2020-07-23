@@ -31,32 +31,28 @@ matrix:
         - WHEEL_PATH=.tox/dist
     - env:
         - TOXENV=py27-nocov
-        - WHEEL_MANYLINUX1=cp27
-        - WHEEL_PATH=wheelhouse
+        - WHEEL_MANYLINUX="1 cp27"
       python: '2.7'
     - env:
         - TOXENV=py35-cover,codecov,extension-coveralls,coveralls
       python: '3.5'
     - env:
         - TOXENV=py35-nocov
-        - WHEEL_MANYLINUX1=cp35
-        - WHEEL_PATH=wheelhouse
+        - WHEEL_MANYLINUX="1 cp35"
       python: '3.5'
     - env:
         - TOXENV=py36-cover,codecov,extension-coveralls,coveralls
       python: '3.6'
     - env:
         - TOXENV=py36-nocov
-        - WHEEL_MANYLINUX1=cp36
-        - WHEEL_PATH=wheelhouse
+        - WHEEL_MANYLINUX="1 cp36"
       python: '3.6'
     - env:
         - TOXENV=py37-cover,codecov,extension-coveralls,coveralls
       python: '3.7'
     - env:
         - TOXENV=py37-nocov
-        - WHEEL_MANYLINUX1=cp37
-        - WHEEL_PATH=wheelhouse
+        - WHEEL_MANYLINUX="1 cp37"
       python: '3.7'
     - os: osx
       osx_image: xcode11
@@ -74,8 +70,7 @@ matrix:
         - WHEEL_PATH=.tox/dist
     - env:
         - TOXENV=py38-nocov
-        - WHEEL_MANYLINUX1=cp38
-        - WHEEL_PATH=wheelhouse
+        - WHEEL_MANYLINUX="1 cp38"
       python: '3.8'
     - env:
         - TOXENV=pypy-cover,codecov,extension-coveralls,coveralls
@@ -111,9 +106,10 @@ script:
   - |
     (
     set -eux
-    if [[ -n ${WHEEL_MANYLINUX1:-} ]]; then
-      docker run --rm --user $UID -itv $(pwd):/code ionelmc/manylinux $WHEEL_MANYLINUX1
-      tox --installpkg $WHEEL_PATH/*.whl -v
+    if [[ -n ${WHEEL_MANYLINUX:-} ]]; then
+      docker run --rm --user $UID -v $(pwd):/code ionelmc/manylinux:manylinux$WHEEL_MANYLINUX
+      tox --installpkg wheelhouse/*.whl -v
+      export WHEEL_PATH=wheelhouse
     else
       tox -v
     fi
