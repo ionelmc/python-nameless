@@ -51,7 +51,7 @@ def read(*names, **kwargs):
 
 setup(
     name='nameless',
-    version='1.0.0',
+    version='1.753.2',
     license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
     long_description='%s\n%s' % (
