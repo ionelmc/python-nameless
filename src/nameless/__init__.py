@@ -1,4 +1,4 @@
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 
 from ._nameless import ffi as _ffi
 from ._nameless import lib as _lib
