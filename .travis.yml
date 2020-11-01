@@ -9,30 +9,6 @@ env:
     - LANG=en_US.UTF-8
 matrix:
   include:
-    - python: '3.6'
-      env:
-        - TOXENV=check
-    - env:
-        - TOXENV=py27,codecov,extension-coveralls,coveralls
-      python: '2.7'
-    - env:
-        - TOXENV=py35,codecov,extension-coveralls,coveralls
-      python: '3.5'
-    - env:
-        - TOXENV=py36,codecov,extension-coveralls,coveralls
-      python: '3.6'
-    - env:
-        - TOXENV=py37,codecov,extension-coveralls,coveralls
-      python: '3.7'
-    - env:
-        - TOXENV=py38,codecov,extension-coveralls,coveralls
-      python: '3.8'
-    - env:
-        - TOXENV=py39,codecov,extension-coveralls,coveralls
-      python: '3.9'
-    - env:
-        - TOXENV=pypy,codecov,extension-coveralls,coveralls
-      python: 'pypy'
     - env:
         - TOXENV=pypy3,codecov,extension-coveralls,coveralls
         - TOXPYTHON=pypy3
@@ -48,7 +24,7 @@ install:
   - pip --version
   - tox --version
 script:
-  - tox -v
+  - tox -v --sitepackages
 after_failure:
   - cat .tox/log/*
   - cat .tox/*/log/*
