@@ -1,5 +1,6 @@
 language: python
 dist: xenial
+virt: lxd
 cache: false
 env:
   global:
@@ -54,24 +55,31 @@ matrix:
         - TOXENV=py37-nocov
         - WHEEL_MANYLINUX="1 cp37"
       python: '3.7'
-    - os: osx
-      osx_image: xcode11
-      language: generic
-      env:
-        - TOXENV=py38-cover
     - env:
         - TOXENV=py38-cover,codecov,extension-coveralls,coveralls
       python: '3.8'
-    - os: osx
-      osx_image: xcode11
-      language: generic
-      env:
-        - TOXENV=py38-nocov
-        - WHEEL_PATH=.tox/dist
     - env:
         - TOXENV=py38-nocov
         - WHEEL_MANYLINUX="1 cp38"
       python: '3.8'
+    - os: osx
+      osx_image: xcode11
+      language: generic
+      env:
+        - TOXENV=py39-cover
+    - env:
+        - TOXENV=py39-cover,codecov,extension-coveralls,coveralls
+      python: '3.9'
+    - os: osx
+      osx_image: xcode11
+      language: generic
+      env:
+        - TOXENV=py39-nocov
+        - WHEEL_PATH=.tox/dist
+    - env:
+        - TOXENV=py39-nocov
+        - WHEEL_MANYLINUX="1 cp39"
+      python: '3.9'
     - env:
         - TOXENV=pypy-cover,codecov,extension-coveralls,coveralls
       python: 'pypy'
