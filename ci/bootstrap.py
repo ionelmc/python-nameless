@@ -1,18 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import
-from __future__ import print_function
-from __future__ import unicode_literals
-
 import os
+import pathlib
 import subprocess
 import sys
-from os.path import abspath
-from os.path import dirname
-from os.path import exists
-from os.path import join
 
-base_path = dirname(dirname(abspath(__file__)))
+base_path: pathlib.Path = pathlib.Path(__file__).resolve().parent
+templates_path = base_path / "ci" / "templates"
 
 
 def check_call(args):
@@ -21,12 +15,12 @@ def check_call(args):
 
 
 def exec_in_env():
-    env_path = join(base_path, ".tox", "bootstrap")
+    env_path = base_path / ".tox" / "bootstrap"
     if sys.platform == "win32":
-        bin_path = join(env_path, "Scripts")
+        bin_path = env_path / "Scripts"
     else:
-        bin_path = join(env_path, "bin")
-    if not exists(env_path):
+        bin_path = env_path / "bin"
+    if not env_path.exists():
         import subprocess
 
         print("Making bootstrap env in: {0} ...".format(env_path))
@@ -38,10 +32,10 @@ def exec_in_env():
             except subprocess.CalledProcessError:
                 check_call(["virtualenv", env_path])
         print("Installing `jinja2` into bootstrap environment...")
-        check_call([join(bin_path, "pip"), "install", "jinja2", "tox"])
-    python_executable = join(bin_path, "python")
-    if not os.path.exists(python_executable):
-        python_executable += '.exe'
+        check_call([bin_path / "pip", "install", "jinja2", "tox"])
+    python_executable = bin_path / "python"
+    if not python_executable.exists():
+        python_executable = python_executable.with_suffix('.exe')
 
     print("Re-executing with: {0}".format(python_executable))
     print("+ exec", python_executable, __file__, "--no-env")
@@ -54,10 +48,10 @@ def main():
     print("Project path: {0}".format(base_path))
 
     jinja = jinja2.Environment(
-        loader=jinja2.FileSystemLoader(join(base_path, "ci", "templates")),
+        loader=jinja2.FileSystemLoader(templates_path),
         trim_blocks=True,
         lstrip_blocks=True,
-        keep_trailing_newline=True
+        keep_trailing_newline=True,
     )
 
     tox_environments = [
@@ -71,10 +65,12 @@ def main():
     ]
     tox_environments = [line for line in tox_environments if line.startswith('py')]
 
-    for name in os.listdir(join("ci", "templates")):
-        with open(join(base_path, name), "w") as fh:
-            fh.write(jinja.get_template(name).render(tox_environments=tox_environments))
-        print("Wrote {}".format(name))
+    for template_name in templates_path.rglob('*'):
+        relative_path = template_name.relative_to(templates_path)
+        destination = base_path / relative_path
+        destination.parent.mkdir(parents=True, exist_ok=False)
+        destination.write_text(jinja.get_template(template_name).render(tox_environments=tox_environments))
+        print("Wrote {}".format(relative_path))
     print("DONE.")
 
 

@@ -10,39 +10,31 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |travis| |appveyor| |requires|
+      - | |github-actions| |requires|
         | |coveralls| |codecov|
-        | |landscape| |scrutinizer| |codacy| |codeclimate|
+        | |scrutinizer| |codacy| |codeclimate|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
-    :target: https://readthedocs.org/projects/python-nameless
+    :target: https://python-nameless.readthedocs.io/
     :alt: Documentation Status
 
-.. |travis| image:: https://api.travis-ci.org/ionelmc/python-nameless.svg?branch=master
-    :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/ionelmc/python-nameless
+.. |github-actions| image:: https://github.com/ionelmc/python-nameless/actions/workflows/github-actions.yml/badge.svg
+    :alt: GitHub Actions Build Status
+    :target: https://github.com/ionelmc/python-nameless/actions
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/ionelmc/python-nameless?branch=master&svg=true
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/ionelmc/python-nameless
-
-.. |requires| image:: https://requires.io/github/ionelmc/python-nameless/requirements.svg?branch=master
+.. |requires| image:: https://requires.io/github/ionelmc/python-nameless/requirements.svg?branch=main
     :alt: Requirements Status
-    :target: https://requires.io/github/ionelmc/python-nameless/requirements/?branch=master
+    :target: https://requires.io/github/ionelmc/python-nameless/requirements/?branch=main
 
-.. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=master&service=github
+.. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=main&service=github
     :alt: Coverage Status
     :target: https://coveralls.io/r/ionelmc/python-nameless
 
-.. |codecov| image:: https://codecov.io/gh/ionelmc/python-nameless/branch/master/graphs/badge.svg?branch=master
+.. |codecov| image:: https://codecov.io/gh/ionelmc/python-nameless/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
-
-.. |landscape| image:: https://landscape.io/github/ionelmc/python-nameless/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/ionelmc/python-nameless/master
-    :alt: Code Quality Status
 
 .. |codacy| image:: https://img.shields.io/codacy/grade/862e7946eabb4112be6503a667381b71.svg
     :target: https://www.codacy.com/app/ionelmc/python-nameless
@@ -70,10 +62,10 @@ Overview
 
 .. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/v0.1.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/ionelmc/python-nameless/compare/v0.1.0...master
+    :target: https://github.com/ionelmc/python-nameless/compare/v0.1.0...main
 
 
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/quality/g/ionelmc/python-nameless/master.svg
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/quality/g/ionelmc/python-nameless/main.svg
     :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/ionelmc/python-nameless/
 
@@ -93,7 +85,7 @@ Installation
 
 You can also install the in-development version with::
 
-    pip install https://github.com/ionelmc/python-nameless/archive/master.zip
+    pip install https://github.com/ionelmc/python-nameless/archive/main.zip
 
 
 Documentation

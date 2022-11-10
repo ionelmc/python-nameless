@@ -18,11 +18,12 @@ extensions = [
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'Nameless'
-year = '2019-2020'
+year = '2019-now'
 author = 'Ionel Cristian Mărieș'
 copyright = '{0}, {1}'.format(year, author)
 try:
     from pkg_resources import get_distribution
+
     version = release = get_distribution('nameless').version
 except Exception:
     traceback.print_exc()
@@ -44,7 +45,7 @@ html_use_smartypants = True
 html_last_updated_fmt = '%b %d, %Y'
 html_split_index = False
 html_sidebars = {
-   '**': ['searchbox.html', 'globaltoc.html', 'sourcelink.html'],
+    '**': ['searchbox.html', 'globaltoc.html', 'sourcelink.html'],
 }
 html_short_title = '%s-%s' % (project, version)
 
