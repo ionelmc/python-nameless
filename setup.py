@@ -2,63 +2,15 @@
 # -*- encoding: utf-8 -*-
 
 import io
-import os
-import platform
 import re
 from glob import glob
 from os.path import basename
 from os.path import dirname
 from os.path import join
-from os.path import relpath
 from os.path import splitext
 
-from setuptools import Extension
 from setuptools import find_packages
 from setuptools import setup
-from setuptools.command.build_ext import build_ext
-from setuptools.dist import Distribution
-
-# Enable code coverage for C code: we can't use CFLAGS=-coverage in tox.ini, since that may mess with compiling
-# dependencies (e.g. numpy). Therefore we set SETUPPY_CFLAGS=-coverage in tox.ini and copy it to CFLAGS here (after
-# deps have been safely installed).
-if 'TOX_ENV_NAME' in os.environ and os.environ.get('SETUPPY_EXT_COVERAGE') == 'yes' and platform.system() == 'Linux':
-    CFLAGS = os.environ['CFLAGS'] = '-fprofile-arcs -ftest-coverage'
-    LFLAGS = os.environ['LFLAGS'] = '-lgcov'
-else:
-    CFLAGS = ''
-    LFLAGS = ''
-
-
-class OptionalBuildExt(build_ext):
-    """Allow the building of C extensions to fail."""
-    def run(self):
-        try:
-            if os.environ.get('SETUPPY_FORCE_PURE'):
-                raise Exception('C extensions disabled (SETUPPY_FORCE_PURE)!')
-            super().run()
-        except Exception as e:
-            self._unavailable(e)
-            self.extensions = []  # avoid copying missing files (it would fail).
-
-    def _unavailable(self, e):
-        print('*' * 80)
-        print('''WARNING:
-
-    An optional code optimization (C extension) could not be compiled.
-
-    Optimizations for this package will not be available!
-        ''')
-
-        print('CAUSE:')
-        print('')
-        print('    ' + repr(e))
-        print('*' * 80)
-
-
-class BinaryDistribution(Distribution):
-    """Distribution which almost always forces a binary package with platform name"""
-    def has_ext_modules(self):
-        return super().has_ext_modules() or not os.environ.get('SETUPPY_ALLOW_PURE')
 
 
 def read(*names, **kwargs):
@@ -136,17 +88,4 @@ setup(
             'nameless = nameless.cli:main',
         ]
     },
-    cmdclass={'build_ext': OptionalBuildExt},
-    ext_modules=[
-        Extension(
-            splitext(relpath(path, 'src').replace(os.sep, '.'))[0],
-            sources=[path],
-            extra_compile_args=CFLAGS.split(),
-            extra_link_args=LFLAGS.split(),
-            include_dirs=[dirname(path)],
-        )
-        for root, _, _ in os.walk('src')
-        for path in glob(join(root, '*.c'))
-    ],
-    distclass=BinaryDistribution,
 )
