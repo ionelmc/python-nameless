@@ -3,18 +3,30 @@
 
 import io
 import os
+import platform
 import re
-import sys
 from glob import glob
 from os.path import basename
 from os.path import dirname
 from os.path import join
+from os.path import relpath
 from os.path import splitext
 
+from setuptools import Extension
 from setuptools import find_packages
 from setuptools import setup
 from setuptools.command.build_ext import build_ext
 from setuptools.dist import Distribution
+
+# Enable code coverage for C code: we can't use CFLAGS=-coverage in tox.ini, since that may mess with compiling
+# dependencies (e.g. numpy). Therefore we set SETUPPY_CFLAGS=-coverage in tox.ini and copy it to CFLAGS here (after
+# deps have been safely installed).
+if 'TOX_ENV_NAME' in os.environ and os.environ.get('SETUPPY_EXT_COVERAGE') == 'yes' and platform.system() == 'Linux':
+    CFLAGS = os.environ['CFLAGS'] = '-fprofile-arcs -ftest-coverage'
+    LFLAGS = os.environ['LFLAGS'] = '-lgcov'
+else:
+    CFLAGS = ''
+    LFLAGS = ''
 
 
 class OptionalBuildExt(build_ext):
@@ -109,7 +121,6 @@ setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        'cffi>=1.0.0',
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
     extras_require={
@@ -117,13 +128,7 @@ setup(
         #   'rst': ['docutils>=0.11'],
         #   ':python_version=="2.6"': ['argparse'],
     },
-    # We only require CFFI when compiling.
-    # pyproject.toml does not support requirements only for some build actions,
-    # but we can do it in setup.py.
     setup_requires=[
-        'setuptools_scm>=3.3.1',
-        'cffi>=1.0.0',
-    ] if any(i.startswith('build') or i.startswith('bdist') for i in sys.argv) else [
         'setuptools_scm>=3.3.1',
     ],
     entry_points={
@@ -132,5 +137,16 @@ setup(
         ]
     },
     cmdclass={'build_ext': OptionalBuildExt},
-    cffi_modules=[i + ':ffi' for i in glob('src/*/_*_build.py')],
+    ext_modules=[
+        Extension(
+            splitext(relpath(path, 'src').replace(os.sep, '.'))[0],
+            sources=[path],
+            extra_compile_args=CFLAGS.split(),
+            extra_link_args=LFLAGS.split(),
+            include_dirs=[dirname(path)],
+        )
+        for root, _, _ in os.walk('src')
+        for path in glob(join(root, '*.c'))
+    ],
+    distclass=BinaryDistribution,
 )

@@ -3,7 +3,6 @@ requires = [
     "setuptools>=30.3.0",
     "wheel",
     "setuptools_scm>=3.3.1",
-    "cffi>=1.0.0",
 ]
 
 [tool.black]
