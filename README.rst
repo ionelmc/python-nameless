@@ -12,7 +12,7 @@ Overview
     * - tests
       - | |github-actions| |requires|
         | |coveralls| |codecov|
-        | |scrutinizer| |codacy| |codeclimate|
+        | |scrutinizer| |codeclimate|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
@@ -35,10 +35,6 @@ Overview
 .. |codecov| image:: https://codecov.io/gh/ionelmc/python-nameless/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status
     :target: https://codecov.io/github/ionelmc/python-nameless
-
-.. |codacy| image:: https://img.shields.io/codacy/grade/862e7946eabb4112be6503a667381b71.svg
-    :target: https://www.codacy.com/app/ionelmc/python-nameless
-    :alt: Codacy Code Quality Status
 
 .. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-nameless/badges/gpa.svg
    :target: https://codeclimate.com/github/ionelmc/python-nameless

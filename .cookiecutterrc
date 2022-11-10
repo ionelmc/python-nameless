@@ -9,8 +9,8 @@ default_context:
     c_extension_support: cython
     c_extension_test_pypi: 'no'
     c_extension_test_pypi_username: '-'
-    codacy: 'yes'
-    codacy_projectid: 862e7946eabb4112be6503a667381b71
+    codacy: 'no'
+    codacy_projectid: '-'
     codeclimate: 'yes'
     codecov: 'yes'
     command_line_interface: argparse
