@@ -20,11 +20,7 @@ def read(*names, **kwargs):
 
 setup(
     name='nameless',
-    use_scm_version={
-        'local_scheme': 'dirty-tag',
-        'write_to': 'src/nameless/_version.py',
-        'fallback_version': '0.1.0',
-    },
+    version='0.1.0',
     license='BSD-2-Clause',
     description='An example package. Generated with cookiecutter-pylibrary.',
     long_description='{}\n{}'.format(
@@ -73,6 +69,7 @@ setup(
     ],
     python_requires='>=3.7',
     install_requires=[
+        'click',
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
     extras_require={
@@ -80,9 +77,6 @@ setup(
         #   'rst': ['docutils>=0.11'],
         #   ':python_version=="2.6"': ['argparse'],
     },
-    setup_requires=[
-        'setuptools_scm>=3.3.1',
-    ],
     entry_points={
         'console_scripts': [
             'nameless = nameless.cli:main',

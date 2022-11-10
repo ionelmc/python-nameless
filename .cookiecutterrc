@@ -13,7 +13,7 @@ default_context:
     codacy_projectid: '-'
     codeclimate: 'yes'
     codecov: 'yes'
-    command_line_interface: argparse
+    command_line_interface: click
     command_line_interface_bin_name: nameless
     coveralls: 'yes'
     distribution_name: nameless
@@ -41,7 +41,7 @@ default_context:
     requiresio: 'yes'
     scrutinizer: 'yes'
     setup_py_uses_pytest_runner: 'no'
-    setup_py_uses_setuptools_scm: 'yes'
+    setup_py_uses_setuptools_scm: 'no'
     sphinx_docs: 'yes'
     sphinx_docs_hosting: https://python-nameless.readthedocs.io/
     sphinx_doctest: 'yes'

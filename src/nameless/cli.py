@@ -14,13 +14,10 @@ Why does this file exist, and why not put this in __main__?
 
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
-import argparse
-
-parser = argparse.ArgumentParser(description='Command description.')
-parser.add_argument('names', metavar='NAME', nargs=argparse.ZERO_OR_MORE,
-                    help="A name of something.")
+import click
 
 
-def main(args=None):
-    args = parser.parse_args(args=args)
-    print(args.names)
+@click.command()
+@click.argument('names', nargs=-1)
+def main(names):
+    click.echo(repr(names))
