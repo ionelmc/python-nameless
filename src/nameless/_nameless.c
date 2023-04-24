@@ -8,7 +8,6 @@ static PyObject* longest(PyObject *self, PyObject *value) {
     PyObject *args;
     PyObject *kwargs;
     PyObject *result;
-
     module = PyImport_ImportModule("builtins");
     if (!module)
         return NULL;
@@ -54,6 +53,7 @@ static struct PyMethodDef module_functions[] = {
     {"longest", longest, METH_O, longest_doc},
     {NULL, NULL}
 };
+
 static struct PyModuleDef moduledef = {
     PyModuleDef_HEAD_INIT,
     "nameless._nameless", /* m_name */
@@ -69,9 +69,7 @@ static struct PyModuleDef moduledef = {
 static PyObject* moduleinit(void) {
     PyObject *module;
 
-
     module = PyModule_Create(&moduledef);
-
 
     if (module == NULL)
         return NULL;
@@ -82,4 +80,3 @@ static PyObject* moduleinit(void) {
 PyMODINIT_FUNC PyInit__nameless(void) {
     return moduleinit();
 }
-

@@ -10,7 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |github-actions| |requires|
+      - | |github-actions|
         | |coveralls| |codecov|
         | |scrutinizer| |codeclimate|
     * - package
@@ -23,10 +23,6 @@ Overview
 .. |github-actions| image:: https://github.com/ionelmc/python-nameless/actions/workflows/github-actions.yml/badge.svg
     :alt: GitHub Actions Build Status
     :target: https://github.com/ionelmc/python-nameless/actions
-
-.. |requires| image:: https://requires.io/github/ionelmc/python-nameless/requirements.svg?branch=main
-    :alt: Requirements Status
-    :target: https://requires.io/github/ionelmc/python-nameless/requirements/?branch=main
 
 .. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=main&service=github
     :alt: Coverage Status
