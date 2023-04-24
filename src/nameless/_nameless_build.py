@@ -1,17 +1,19 @@
-from os.path import dirname
-from os.path import join
+from pathlib import Path
 
 from cffi import FFI
 
 ffi = FFI()
-ffi.cdef('''
+ffi.cdef(
+    """
     char* longest(int argv, char *argv[]);
-''')
-
-ffi.set_source(
-    'nameless._nameless',
-    open(join(dirname(__file__), '_nameless.c')).read()
+    """
 )
 
-if __name__ == '__main__':
+
+ffi.set_source(
+    "nameless._nameless",
+    Path(__file__).parent.joinpath("_nameless.c").read_text(),
+)
+
+if __name__ == "__main__":
     ffi.compile()

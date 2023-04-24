@@ -16,4 +16,3 @@ char* longest(int argc, char *argv[]) {
         return NULL;
     }
 }
-
