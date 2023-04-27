@@ -24,6 +24,7 @@ jobs:
             toxpython: 'python3.7'
             python_arch: 'x64'
             tox_env: 'py37-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -32,6 +33,7 @@ jobs:
             toxpython: 'python3.7'
             python_arch: 'x64'
             tox_env: 'py37-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -40,6 +42,7 @@ jobs:
             toxpython: 'python3.7'
             python_arch: 'x64'
             tox_env: 'py37-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -104,6 +107,7 @@ jobs:
             toxpython: 'python3.8'
             python_arch: 'x64'
             tox_env: 'py38-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -112,6 +116,7 @@ jobs:
             toxpython: 'python3.8'
             python_arch: 'x64'
             tox_env: 'py38-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -120,6 +125,7 @@ jobs:
             toxpython: 'python3.8'
             python_arch: 'x64'
             tox_env: 'py38-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -184,6 +190,7 @@ jobs:
             toxpython: 'python3.9'
             python_arch: 'x64'
             tox_env: 'py39-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -192,6 +199,7 @@ jobs:
             toxpython: 'python3.9'
             python_arch: 'x64'
             tox_env: 'py39-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -200,6 +208,7 @@ jobs:
             toxpython: 'python3.9'
             python_arch: 'x64'
             tox_env: 'py39-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -264,6 +273,7 @@ jobs:
             toxpython: 'python3.10'
             python_arch: 'x64'
             tox_env: 'py310-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -272,6 +282,7 @@ jobs:
             toxpython: 'python3.10'
             python_arch: 'x64'
             tox_env: 'py310-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -280,6 +291,7 @@ jobs:
             toxpython: 'python3.10'
             python_arch: 'x64'
             tox_env: 'py310-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -344,6 +356,7 @@ jobs:
             toxpython: 'python3.11'
             python_arch: 'x64'
             tox_env: 'py311-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -352,6 +365,7 @@ jobs:
             toxpython: 'python3.11'
             python_arch: 'x64'
             tox_env: 'py311-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -360,6 +374,7 @@ jobs:
             toxpython: 'python3.11'
             python_arch: 'x64'
             tox_env: 'py311-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -424,6 +439,7 @@ jobs:
             toxpython: 'pypy3.7'
             python_arch: 'x64'
             tox_env: 'pypy37-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -432,6 +448,7 @@ jobs:
             toxpython: 'pypy3.7'
             python_arch: 'x64'
             tox_env: 'pypy37-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -440,6 +457,7 @@ jobs:
             toxpython: 'pypy3.7'
             python_arch: 'x64'
             tox_env: 'pypy37-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -472,6 +490,7 @@ jobs:
             toxpython: 'pypy3.8'
             python_arch: 'x64'
             tox_env: 'pypy38-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -480,6 +499,7 @@ jobs:
             toxpython: 'pypy3.8'
             python_arch: 'x64'
             tox_env: 'pypy38-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -488,6 +508,7 @@ jobs:
             toxpython: 'pypy3.8'
             python_arch: 'x64'
             tox_env: 'pypy38-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -520,6 +541,7 @@ jobs:
             toxpython: 'pypy3.9'
             python_arch: 'x64'
             tox_env: 'pypy39-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'ubuntu-latest'
@@ -528,6 +550,7 @@ jobs:
             toxpython: 'pypy3.9'
             python_arch: 'x64'
             tox_env: 'pypy39-cover'
+            cover: true
             cibw_arch: 'AMD64'
             cibw_build: false
             os: 'windows-latest'
@@ -536,6 +559,7 @@ jobs:
             toxpython: 'pypy3.9'
             python_arch: 'x64'
             tox_env: 'pypy39-cover'
+            cover: true
             cibw_arch: 'x86_64'
             cibw_build: false
             os: 'macos-latest'
@@ -607,10 +631,12 @@ jobs:
       run: >
         tox -e ${{ matrix.tox_env }} -v
     - uses: coverallsapp/github-action@v2
+      if: matrix.cover
       with:
         flag-name: ${{ matrix.tox_env }}
         parallel: true
     - uses: codecov/codecov-action@v3
+      if: matrix.cover
       with:
         verbose: true
         flags: ${{ matrix.tox_env }}
