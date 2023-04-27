@@ -24,9 +24,9 @@ Overview
     :alt: GitHub Actions Build Status
     :target: https://github.com/ionelmc/python-nameless/actions
 
-.. |coveralls| image:: https://coveralls.io/repos/ionelmc/python-nameless/badge.svg?branch=main&service=github
+.. |coveralls| image:: https://coveralls.io/repos/github/ionelmc/python-nameless/badge.svg?branch=main
     :alt: Coverage Status
-    :target: https://coveralls.io/r/ionelmc/python-nameless
+    :target: https://coveralls.io/github/ionelmc/python-nameless?branch=main
 
 .. |codecov| image:: https://codecov.io/gh/ionelmc/python-nameless/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status

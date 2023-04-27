@@ -632,9 +632,10 @@ jobs:
         tox -e ${{ matrix.tox_env }} -v
     - uses: coverallsapp/github-action@v2
       if: matrix.cover
+      continue-on-error: true
       with:
-        flag-name: ${{ matrix.tox_env }}
         parallel: true
+        flag-name: ${{ matrix.tox_env }}
     - uses: codecov/codecov-action@v3
       if: matrix.cover
       with:
@@ -650,6 +651,7 @@ jobs:
         path: wheelhouse/*.whl
   finish:
     needs: test
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
     - uses: coverallsapp/github-action@v2
