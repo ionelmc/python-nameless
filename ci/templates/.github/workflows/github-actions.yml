@@ -121,3 +121,10 @@ jobs:
       if: matrix.cibw_build
       with:
         path: wheelhouse/*.whl
+  finish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: coverallsapp/github-action@v2
+      with:
+        parallel-finished: true
