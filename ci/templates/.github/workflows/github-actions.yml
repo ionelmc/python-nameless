@@ -46,7 +46,7 @@ jobs:
             python: '{{ python }}'
             toxpython: '{{ toxpython }}'
             python_arch: '{{ python_arch }}'
-            tox_env: '{{ env }}{% if 'cover' in env %},codecov{% endif %}'
+            tox_env: '{{ env }}'
             cibw_arch: '{{ cibw_arch }}'
 {% if 'nocov' in env and not prefix.startswith('pypy') %}
             cibw_build: '{{ cpython }}-{{ wheel_arch }}'
@@ -100,6 +100,14 @@ jobs:
         !matrix.cibw_build
       run: >
         tox -e {{ '${{ matrix.tox_env }}' }} -v
+    - uses: coverallsapp/github-action@v2
+      with:
+        flag-name: {{ '${{ matrix.tox_env }}' }}
+        parallel: true
+    - uses: codecov/codecov-action@v3
+      with:
+        verbose: true
+        flags: {{ '${{ matrix.tox_env }}' }}
     - name: check wheel
       if: matrix.cibw_build
       run: twine check wheelhouse/*.whl

@@ -30,7 +30,7 @@ Overview
 
 .. |codecov| image:: https://codecov.io/gh/ionelmc/python-nameless/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status
-    :target: https://codecov.io/github/ionelmc/python-nameless
+    :target: https://app.codecov.io/github/ionelmc/python-nameless
 
 .. |codeclimate| image:: https://codeclimate.com/github/ionelmc/python-nameless/badges/gpa.svg
    :target: https://codeclimate.com/github/ionelmc/python-nameless

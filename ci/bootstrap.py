@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# ruff: noqa: S
 import os
 import pathlib
 import subprocess
