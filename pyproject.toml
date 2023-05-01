@@ -52,3 +52,7 @@ force-single-line = true
 [tool.black]
 line-length = 140
 target-version = ["py37"]
+skip-string-normalization = true
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
