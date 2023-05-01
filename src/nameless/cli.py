@@ -16,12 +16,12 @@ Why does this file exist, and why not put this in __main__?
 """
 import argparse
 
-parser = argparse.ArgumentParser(description="Command description.")
+parser = argparse.ArgumentParser(description='Command description.')
 parser.add_argument(
-    "names",
-    metavar="NAME",
+    'names',
+    metavar='NAME',
     nargs=argparse.ZERO_OR_MORE,
-    help="A name of something.",
+    help='A name of something.',
 )
 
 
