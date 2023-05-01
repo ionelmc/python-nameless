@@ -52,9 +52,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.org/project/nameless
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/v0.1.1.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/v1.0.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/ionelmc/python-nameless/compare/v0.1.1...main
+    :target: https://github.com/ionelmc/python-nameless/compare/v1.0.0...main
 
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/quality/g/ionelmc/python-nameless/main.svg

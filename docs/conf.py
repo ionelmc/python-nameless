@@ -24,7 +24,7 @@ try:
     version = release = get_distribution('nameless').version
 except Exception:
     traceback.print_exc()
-    version = release = '0.1.1'
+    version = release = '1.0.0'
 
 pygments_style = 'trac'
 templates_path = ['.']
