@@ -1,6 +1,6 @@
 #include "Python.h"
 
-static PyObject* main(PyObject *self, PyObject *value) {
+static PyObject* compute(PyObject *self, PyObject *value) {
     PyObject *module;
     PyObject *module_dict;
     PyObject *len;
@@ -47,10 +47,10 @@ static PyObject* main(PyObject *self, PyObject *value) {
     return result;
 }
 
-PyDoc_STRVAR(main_doc, "Docstring for main function.");
+PyDoc_STRVAR(compute_doc, "Docstring for compute function.");
 
 static struct PyMethodDef module_functions[] = {
-    {"main", main, METH_O, main_doc},
+    {"compute", compute, METH_O, compute_doc},
     {NULL, NULL}
 };
 

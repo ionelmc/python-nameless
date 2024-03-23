@@ -1,6 +1,6 @@
 try:
-    from ._core import main
+    from ._core import compute
 except ImportError:
 
-    def main(args):
+    def compute(args):
         return max(args, key=len)

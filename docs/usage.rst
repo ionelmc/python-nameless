@@ -2,6 +2,10 @@
 Usage
 =====
 
-To use Nameless in a project::
+To use the project:
 
-	import nameless
+
+.. code-block:: python
+
+    import nameless
+    nameless.compute(...)
