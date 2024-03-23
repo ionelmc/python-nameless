@@ -10,14 +10,11 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |github-actions|
-        | |coveralls| |codecov|
-        | |scrutinizer| |codeclimate|
+      - |github-actions| |coveralls| |codecov| |scrutinizer| |codeclimate|
     * - package
-      - | |version| |wheel| |supported-versions| |supported-implementations|
-        | |commits-since|
+      - |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
-    :target: https://python-nameless.readthedocs.io/
+    :target: https://readthedocs.org/projects/python-nameless/
     :alt: Documentation Status
 
 .. |github-actions| image:: https://github.com/ionelmc/python-nameless/actions/workflows/github-actions.yml/badge.svg

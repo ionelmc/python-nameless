@@ -17,7 +17,7 @@ except ImportError:
     Cython = None
 
 # Enable code coverage for C code: we cannot use CFLAGS=-coverage in tox.ini, since that may mess with compiling
-# dependencies (e.g. numpy). Therefore we set SETUPPY_CFLAGS=-coverage in tox.ini and copy it to CFLAGS here (after
+# dependencies (e.g. numpy). Therefore, we set SETUPPY_CFLAGS=-coverage in tox.ini and copy it to CFLAGS here (after
 # deps have been safely installed).
 if "TOX_ENV_NAME" in os.environ and os.environ.get("SETUPPY_EXT_COVERAGE") == "yes":
     CFLAGS = os.environ["CFLAGS"] = "-DCYTHON_TRACE=1"
@@ -104,11 +104,11 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
         # uncomment if you test on these interpreters:
@@ -125,7 +125,7 @@ setup(
     keywords=[
         # eg: "keyword1", "keyword2", "keyword3",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     install_requires=[
         # eg: "aspectlib==1.1.1", "six>=1.7",
     ],
@@ -134,17 +134,19 @@ setup(
         #   "rst": ["docutils>=0.11"],
         #   ":python_version=="2.6"": ["argparse"],
     },
-    setup_requires=[
-        "setuptools_scm>=3.3.1",
-        "cython",
-    ]
-    if Cython
-    else [
-        "setuptools_scm>=3.3.1",
-    ],
+    setup_requires=(
+        [
+            "setuptools_scm>=3.3.1",
+            "cython",
+        ]
+        if Cython
+        else [
+            "setuptools_scm>=3.3.1",
+        ]
+    ),
     entry_points={
         "console_scripts": [
-            "nameless = nameless.cli:main",
+            "nameless = nameless.cli:run",
         ]
     },
     cmdclass={"build_ext": OptionalBuildExt},
