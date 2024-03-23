@@ -17,7 +17,7 @@ Why does this file exist, and why not put this in __main__?
 
 import argparse
 
-from .core import main
+from .core import compute
 
 parser = argparse.ArgumentParser(description="Command description.")
 parser.add_argument(
@@ -30,5 +30,5 @@ parser.add_argument(
 
 def run(args=None):
     args = parser.parse_args(args=args)
-    print(main(args.names))
+    print(compute(args.names))
     parser.exit(0)

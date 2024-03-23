@@ -1,5 +1,5 @@
 
-char* main(int argc, char *argv[]) {
+char* compute(int argc, char *argv[]) {
     if (argc) {
         int len, i,
             max = 0,

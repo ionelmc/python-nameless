@@ -5,7 +5,7 @@ from cffi import FFI
 ffi = FFI()
 ffi.cdef(
     """
-    char* main(int argv, char *argv[]);
+    char* compute(int argv, char *argv[]);
     """
 )
 

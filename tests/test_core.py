@@ -1,5 +1,5 @@
-from nameless import main
+from nameless import compute
 
 
-def test_main():
-    assert main(["a", "bc", "abc"]) == "abc"
+def test_compute():
+    assert compute(["a", "bc", "abc"]) == "abc"
