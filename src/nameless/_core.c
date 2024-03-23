@@ -1,6 +1,6 @@
 #include "Python.h"
 
-static PyObject* longest(PyObject *self, PyObject *value) {
+static PyObject* main(PyObject *self, PyObject *value) {
     PyObject *module;
     PyObject *module_dict;
     PyObject *len;
@@ -47,16 +47,16 @@ static PyObject* longest(PyObject *self, PyObject *value) {
     return result;
 }
 
-PyDoc_STRVAR(longest_doc, "Docstring for longest function.");
+PyDoc_STRVAR(main_doc, "Docstring for main function.");
 
 static struct PyMethodDef module_functions[] = {
-    {"longest", longest, METH_O, longest_doc},
+    {"main", main, METH_O, main_doc},
     {NULL, NULL}
 };
 
 static struct PyModuleDef moduledef = {
     PyModuleDef_HEAD_INIT,
-    "nameless._nameless", /* m_name */
+    "nameless._core", /* m_name */
     NULL,             /* m_doc */
     -1,               /* m_size */
     module_functions, /* m_methods */
@@ -77,6 +77,6 @@ static PyObject* moduleinit(void) {
     return module;
 }
 
-PyMODINIT_FUNC PyInit__nameless(void) {
+PyMODINIT_FUNC PyInit__core(void) {
     return moduleinit();
 }

@@ -14,7 +14,10 @@ Why does this file exist, and why not put this in __main__?
 
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
+
 import argparse
+
+from .core import main
 
 parser = argparse.ArgumentParser(description="Command description.")
 parser.add_argument(
@@ -25,6 +28,7 @@ parser.add_argument(
 )
 
 
-def main(args=None):
+def run(args=None):
     args = parser.parse_args(args=args)
-    print(args.names)
+    print(main(args.names))
+    parser.exit(0)
