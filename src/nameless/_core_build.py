@@ -11,8 +11,8 @@ ffi.cdef(
 
 
 ffi.set_source(
-    "nameless._nameless",
-    Path(__file__).parent.joinpath("_nameless.c").read_text(),
+    "nameless._core",
+    Path(__file__).parent.joinpath("_core.c").read_text(),
 )
 
 if __name__ == "__main__":

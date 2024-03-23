@@ -87,11 +87,11 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
         # uncomment if you test on these interpreters:
@@ -108,7 +108,7 @@ setup(
     keywords=[
         # eg: "keyword1", "keyword2", "keyword3",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     install_requires=[
         "cffi>=1.0.0",
         # eg: "aspectlib==1.1.1", "six>=1.7",
@@ -121,17 +121,19 @@ setup(
     # We only require CFFI when compiling.
     # pyproject.toml does not support requirements only for some build actions,
     # but we can do it in setup.py.
-    setup_requires=[
-        "setuptools_scm>=3.3.1",
-        "cffi>=1.0.0",
-    ]
-    if any(arg.startswith(("build", "bdist")) for arg in sys.argv)
-    else [
-        "setuptools_scm>=3.3.1",
-    ],
+    setup_requires=(
+        [
+            "setuptools_scm>=3.3.1",
+            "cffi>=1.0.0",
+        ]
+        if any(arg.startswith(("build", "bdist")) for arg in sys.argv)
+        else [
+            "setuptools_scm>=3.3.1",
+        ]
+    ),
     entry_points={
         "console_scripts": [
-            "nameless = nameless.cli:main",
+            "nameless = nameless.cli:run",
         ]
     },
     cmdclass={"build_ext": OptionalBuildExt},

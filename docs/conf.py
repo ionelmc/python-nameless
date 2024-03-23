@@ -1,6 +1,3 @@
-import os
-import traceback
-
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
@@ -23,6 +20,8 @@ try:
 
     version = release = get_distribution("nameless").version
 except Exception:
+    import traceback
+
     traceback.print_exc()
     version = release = "0.1.0"
 
@@ -32,11 +31,10 @@ extlinks = {
     "issue": ("https://github.com/ionelmc/python-nameless/issues/%s", "#"),
     "pr": ("https://github.com/ionelmc/python-nameless/pull/%s", "PR #"),
 }
-# on_rtd is whether we are on readthedocs.org
-on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 
-if not on_rtd:  # only set the theme if we are building docs locally
-    html_theme = "sphinx_rtd_theme"
+html_theme_options = {
+    "githuburl": "https://github.com/ionelmc/python-nameless/",
+}
 
 html_use_smartypants = True
 html_last_updated_fmt = "%b %d, %Y"
