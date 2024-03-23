@@ -17,10 +17,10 @@ Why does this file exist, and why not put this in __main__?
 
 import click
 
-from .core import main
+from .core import compute
 
 
 @click.command()
 @click.argument("names", nargs=-1)
 def run(names):
-    click.echo(main(names))
+    click.echo(compute(names))
