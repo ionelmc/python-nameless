@@ -6,12 +6,12 @@
         "include_dirs": [
             "src/nameless"
         ],
-        "name": "nameless._nameless",
+        "name": "nameless._core",
         "sources": [
-            "src/nameless/_nameless.pyx"
+            "src/nameless/_core.pyx"
         ]
     },
-    "module_name": "nameless._nameless"
+    "module_name": "nameless._core"
 }
 END: Cython Metadata */
 
@@ -1201,8 +1201,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__nameless___nameless
-#define __PYX_HAVE_API__nameless___nameless
+#define __PYX_HAVE__nameless___core
+#define __PYX_HAVE_API__nameless___core
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -1452,7 +1452,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "src/nameless/_nameless.pyx",
+  "src/nameless/_core.pyx",
 };
 /* #### Code section: utility_code_proto_before_types ### */
 /* NoFastGil.proto */
@@ -2195,14 +2195,14 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* #### Code section: module_declarations ### */
 
-/* Module declarations from "nameless._nameless" */
+/* Module declarations from "nameless._core" */
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "nameless._nameless"
-extern int __pyx_module_is_main_nameless___nameless;
-int __pyx_module_is_main_nameless___nameless = 0;
+#define __Pyx_MODULE_NAME "nameless._core"
+extern int __pyx_module_is_main_nameless___core;
+int __pyx_module_is_main_nameless___core = 0;
 
-/* Implementation of "nameless._nameless" */
+/* Implementation of "nameless._core" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_max;
 /* #### Code section: string_decls ### */
@@ -2214,14 +2214,14 @@ static const char __pyx_k_args[] = "args";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
-static const char __pyx_k_main_2[] = "main";
+static const char __pyx_k_compute[] = "compute";
 static const char __pyx_k_is_coroutine[] = "_is_coroutine";
+static const char __pyx_k_nameless__core[] = "nameless._core";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_nameless__nameless[] = "nameless._nameless";
-static const char __pyx_k_src_nameless__nameless_pyx[] = "src/nameless/_nameless.pyx";
+static const char __pyx_k_src_nameless__core_pyx[] = "src/nameless/_core.pyx";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_8nameless_9_nameless_main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_args); /* proto */
+static PyObject *__pyx_pf_8nameless_5_core_compute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_args); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -2255,15 +2255,15 @@ typedef struct {
   PyObject *__pyx_n_s_args;
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_cline_in_traceback;
+  PyObject *__pyx_n_s_compute;
   PyObject *__pyx_n_s_is_coroutine;
   PyObject *__pyx_n_s_key;
   PyObject *__pyx_n_s_len;
   PyObject *__pyx_n_s_main;
-  PyObject *__pyx_n_s_main_2;
   PyObject *__pyx_n_s_max;
   PyObject *__pyx_n_s_name;
-  PyObject *__pyx_n_s_nameless__nameless;
-  PyObject *__pyx_kp_s_src_nameless__nameless_pyx;
+  PyObject *__pyx_n_s_nameless__core;
+  PyObject *__pyx_kp_s_src_nameless__core_pyx;
   PyObject *__pyx_n_s_test;
   PyObject *__pyx_codeobj_;
   PyObject *__pyx_tuple__2;
@@ -2313,15 +2313,15 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_args);
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
+  Py_CLEAR(clear_module_state->__pyx_n_s_compute);
   Py_CLEAR(clear_module_state->__pyx_n_s_is_coroutine);
   Py_CLEAR(clear_module_state->__pyx_n_s_key);
   Py_CLEAR(clear_module_state->__pyx_n_s_len);
   Py_CLEAR(clear_module_state->__pyx_n_s_main);
-  Py_CLEAR(clear_module_state->__pyx_n_s_main_2);
   Py_CLEAR(clear_module_state->__pyx_n_s_max);
   Py_CLEAR(clear_module_state->__pyx_n_s_name);
-  Py_CLEAR(clear_module_state->__pyx_n_s_nameless__nameless);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_src_nameless__nameless_pyx);
+  Py_CLEAR(clear_module_state->__pyx_n_s_nameless__core);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_src_nameless__core_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_test);
   Py_CLEAR(clear_module_state->__pyx_codeobj_);
   Py_CLEAR(clear_module_state->__pyx_tuple__2);
@@ -2349,15 +2349,15 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_args);
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
+  Py_VISIT(traverse_module_state->__pyx_n_s_compute);
   Py_VISIT(traverse_module_state->__pyx_n_s_is_coroutine);
   Py_VISIT(traverse_module_state->__pyx_n_s_key);
   Py_VISIT(traverse_module_state->__pyx_n_s_len);
   Py_VISIT(traverse_module_state->__pyx_n_s_main);
-  Py_VISIT(traverse_module_state->__pyx_n_s_main_2);
   Py_VISIT(traverse_module_state->__pyx_n_s_max);
   Py_VISIT(traverse_module_state->__pyx_n_s_name);
-  Py_VISIT(traverse_module_state->__pyx_n_s_nameless__nameless);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_src_nameless__nameless_pyx);
+  Py_VISIT(traverse_module_state->__pyx_n_s_nameless__core);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_src_nameless__core_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_test);
   Py_VISIT(traverse_module_state->__pyx_codeobj_);
   Py_VISIT(traverse_module_state->__pyx_tuple__2);
@@ -2395,37 +2395,37 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_args __pyx_mstate_global->__pyx_n_s_args
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
+#define __pyx_n_s_compute __pyx_mstate_global->__pyx_n_s_compute
 #define __pyx_n_s_is_coroutine __pyx_mstate_global->__pyx_n_s_is_coroutine
 #define __pyx_n_s_key __pyx_mstate_global->__pyx_n_s_key
 #define __pyx_n_s_len __pyx_mstate_global->__pyx_n_s_len
 #define __pyx_n_s_main __pyx_mstate_global->__pyx_n_s_main
-#define __pyx_n_s_main_2 __pyx_mstate_global->__pyx_n_s_main_2
 #define __pyx_n_s_max __pyx_mstate_global->__pyx_n_s_max
 #define __pyx_n_s_name __pyx_mstate_global->__pyx_n_s_name
-#define __pyx_n_s_nameless__nameless __pyx_mstate_global->__pyx_n_s_nameless__nameless
-#define __pyx_kp_s_src_nameless__nameless_pyx __pyx_mstate_global->__pyx_kp_s_src_nameless__nameless_pyx
+#define __pyx_n_s_nameless__core __pyx_mstate_global->__pyx_n_s_nameless__core
+#define __pyx_kp_s_src_nameless__core_pyx __pyx_mstate_global->__pyx_kp_s_src_nameless__core_pyx
 #define __pyx_n_s_test __pyx_mstate_global->__pyx_n_s_test
 #define __pyx_codeobj_ __pyx_mstate_global->__pyx_codeobj_
 #define __pyx_tuple__2 __pyx_mstate_global->__pyx_tuple__2
 /* #### Code section: module_code ### */
 
-/* "nameless/_nameless.pyx":3
+/* "nameless/_core.pyx":3
  * # cython: linetrace=True, language_level=3str
  * 
- * def main(args):             # <<<<<<<<<<<<<<
+ * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8nameless_9_nameless_1main(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8nameless_5_core_1compute(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_8nameless_9_nameless_1main = {"main", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8nameless_9_nameless_1main, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_8nameless_9_nameless_1main(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8nameless_5_core_1compute = {"compute", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8nameless_5_core_1compute, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8nameless_5_core_1compute(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2443,7 +2443,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("main (wrapper)", 0);
+  __Pyx_RefNannySetupContext("compute (wrapper)", 0);
   #if !CYTHON_METH_FASTCALL
   #if CYTHON_ASSUME_SAFE_MACROS
   __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
@@ -2474,7 +2474,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "main") < 0)) __PYX_ERR(0, 3, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "compute") < 0)) __PYX_ERR(0, 3, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -2485,7 +2485,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("main", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 3, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("compute", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 3, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -2495,11 +2495,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("nameless._nameless.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nameless._core.compute", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8nameless_9_nameless_main(__pyx_self, __pyx_v_args);
+  __pyx_r = __pyx_pf_8nameless_5_core_compute(__pyx_self, __pyx_v_args);
 
   /* function exit code */
   {
@@ -2512,7 +2512,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8nameless_9_nameless_main(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_args) {
+static PyObject *__pyx_pf_8nameless_5_core_compute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_args) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -2523,12 +2523,12 @@ static PyObject *__pyx_pf_8nameless_9_nameless_main(CYTHON_UNUSED PyObject *__py
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj_)
-  __Pyx_RefNannySetupContext("main", 1);
-  __Pyx_TraceCall("main", __pyx_f[0], 3, 0, __PYX_ERR(0, 3, __pyx_L1_error));
+  __Pyx_RefNannySetupContext("compute", 1);
+  __Pyx_TraceCall("compute", __pyx_f[0], 3, 0, __PYX_ERR(0, 3, __pyx_L1_error));
 
-  /* "nameless/_nameless.pyx":4
+  /* "nameless/_core.pyx":4
  * 
- * def main(args):
+ * def compute(args):
  *     return max(args, key=len)             # <<<<<<<<<<<<<<
  */
   __Pyx_TraceLine(4,0,__PYX_ERR(0, 4, __pyx_L1_error))
@@ -2552,10 +2552,10 @@ static PyObject *__pyx_pf_8nameless_9_nameless_main(CYTHON_UNUSED PyObject *__py
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "nameless/_nameless.pyx":3
+  /* "nameless/_core.pyx":3
  * # cython: linetrace=True, language_level=3str
  * 
- * def main(args):             # <<<<<<<<<<<<<<
+ * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
  */
 
@@ -2564,7 +2564,7 @@ static PyObject *__pyx_pf_8nameless_9_nameless_main(CYTHON_UNUSED PyObject *__py
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("nameless._nameless.main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("nameless._core.compute", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2593,15 +2593,15 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_args, __pyx_k_args, sizeof(__pyx_k_args), 0, 0, 1, 1},
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
+    {&__pyx_n_s_compute, __pyx_k_compute, sizeof(__pyx_k_compute), 0, 0, 1, 1},
     {&__pyx_n_s_is_coroutine, __pyx_k_is_coroutine, sizeof(__pyx_k_is_coroutine), 0, 0, 1, 1},
     {&__pyx_n_s_key, __pyx_k_key, sizeof(__pyx_k_key), 0, 0, 1, 1},
     {&__pyx_n_s_len, __pyx_k_len, sizeof(__pyx_k_len), 0, 0, 1, 1},
     {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
-    {&__pyx_n_s_main_2, __pyx_k_main_2, sizeof(__pyx_k_main_2), 0, 0, 1, 1},
     {&__pyx_n_s_max, __pyx_k_max, sizeof(__pyx_k_max), 0, 0, 1, 1},
     {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
-    {&__pyx_n_s_nameless__nameless, __pyx_k_nameless__nameless, sizeof(__pyx_k_nameless__nameless), 0, 0, 1, 1},
-    {&__pyx_kp_s_src_nameless__nameless_pyx, __pyx_k_src_nameless__nameless_pyx, sizeof(__pyx_k_src_nameless__nameless_pyx), 0, 0, 1, 0},
+    {&__pyx_n_s_nameless__core, __pyx_k_nameless__core, sizeof(__pyx_k_nameless__core), 0, 0, 1, 1},
+    {&__pyx_kp_s_src_nameless__core_pyx, __pyx_k_src_nameless__core_pyx, sizeof(__pyx_k_src_nameless__core_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
     {0, 0, 0, 0, 0, 0, 0}
   };
@@ -2620,16 +2620,16 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "nameless/_nameless.pyx":3
+  /* "nameless/_core.pyx":3
  * # cython: linetrace=True, language_level=3str
  * 
- * def main(args):             # <<<<<<<<<<<<<<
+ * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
  */
   __pyx_tuple__2 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
-  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_nameless__nameless_pyx, __pyx_n_s_main_2, 3, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_nameless__core_pyx, __pyx_n_s_compute, 3, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -2719,10 +2719,10 @@ static int __Pyx_modinit_function_import_code(void) {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec__nameless(PyObject* module); /*proto*/
+static int __pyx_pymod_exec__core(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec__nameless},
+  {Py_mod_exec, (void*)__pyx_pymod_exec__core},
   {0, NULL}
 };
 #endif
@@ -2735,7 +2735,7 @@ namespace {
   #endif
   {
       PyModuleDef_HEAD_INIT,
-      "_nameless",
+      "_core",
       0, /* m_doc */
     #if CYTHON_PEP489_MULTI_PHASE_INIT
       0, /* m_size */
@@ -2783,11 +2783,11 @@ namespace {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC init_nameless(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC init_nameless(void)
+__Pyx_PyMODINIT_FUNC init_core(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC init_core(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit__nameless(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit__nameless(void)
+__Pyx_PyMODINIT_FUNC PyInit__core(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit__core(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -2868,7 +2868,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec__nameless(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec__core(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -2886,7 +2886,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec__nameless(PyObject *__pyx_pyinit_m
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module '_nameless' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module '_core' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -2898,13 +2898,13 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec__nameless(PyObject *__pyx_pyinit_m
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("_nameless", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("_core", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #elif CYTHON_USE_MODULE_STATE
   __pyx_t_1 = PyModule_Create(&__pyx_moduledef); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   {
     int add_module_result = PyState_AddModule(__pyx_t_1, &__pyx_moduledef);
-    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "_nameless" pseudovariable */
+    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "_core" pseudovariable */
     if (unlikely((add_module_result < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     pystate_addmodule_run = 1;
   }
@@ -2928,7 +2928,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit__nameless(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit__core(void)", 0);
   if (__Pyx_check_binary_version(__PYX_LIMITED_VERSION_HEX, __Pyx_get_runtime_version(), CYTHON_COMPILING_IN_LIMITED_API) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -2966,14 +2966,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_nameless___nameless) {
+  if (__pyx_module_is_main_nameless___core) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "nameless._nameless")) {
-      if (unlikely((PyDict_SetItemString(modules, "nameless._nameless", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "nameless._core")) {
+      if (unlikely((PyDict_SetItemString(modules, "nameless._core", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -2993,24 +2993,24 @@ if (!__Pyx_RefNanny) {
   #if defined(__Pyx_Generator_USED) || defined(__Pyx_Coroutine_USED)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  __Pyx_TraceCall("__Pyx_PyMODINIT_FUNC PyInit__nameless(void)", __pyx_f[0], 1, 0, __PYX_ERR(0, 1, __pyx_L1_error));
+  __Pyx_TraceCall("__Pyx_PyMODINIT_FUNC PyInit__core(void)", __pyx_f[0], 1, 0, __PYX_ERR(0, 1, __pyx_L1_error));
 
-  /* "nameless/_nameless.pyx":3
+  /* "nameless/_core.pyx":3
  * # cython: linetrace=True, language_level=3str
  * 
- * def main(args):             # <<<<<<<<<<<<<<
+ * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
  */
   __Pyx_TraceLine(3,0,__PYX_ERR(0, 3, __pyx_L1_error))
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8nameless_9_nameless_1main, 0, __pyx_n_s_main_2, NULL, __pyx_n_s_nameless__nameless, __pyx_d, ((PyObject *)__pyx_codeobj_)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8nameless_5_core_1compute, 0, __pyx_n_s_compute, NULL, __pyx_n_s_nameless__core, __pyx_d, ((PyObject *)__pyx_codeobj_)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_main_2, __pyx_t_2) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_compute, __pyx_t_2) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "nameless/_nameless.pyx":1
+  /* "nameless/_core.pyx":1
  * # cython: linetrace=True, language_level=3str             # <<<<<<<<<<<<<<
  * 
- * def main(args):
+ * def compute(args):
  */
   __Pyx_TraceLine(1,0,__PYX_ERR(0, 1, __pyx_L1_error))
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -3026,7 +3026,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init nameless._nameless", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init nameless._core", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -3040,7 +3040,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init nameless._nameless");
+    PyErr_SetString(PyExc_ImportError, "init nameless._core");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

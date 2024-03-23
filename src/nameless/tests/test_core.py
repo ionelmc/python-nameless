@@ -1,5 +1,5 @@
-from .. import main
+from .. import compute
 
 
-def test_main():
-    assert main([b"a", b"bc", b"abc"]) == b"abc"
+def test_compute():
+    assert compute([b"a", b"bc", b"abc"]) == b"abc"
