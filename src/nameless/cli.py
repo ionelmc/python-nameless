@@ -20,7 +20,7 @@ import sys
 from .core import compute
 
 
-def run(argv=sys.argv):
+def run(argv=sys.argv[1:]):
     """
     Args:
         argv (list): List of arguments
