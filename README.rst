@@ -1,4 +1,6 @@
-
+========
+Overview
+========
 
 .. start-badges
 
@@ -6,11 +8,11 @@
     :stub-columns: 1
 
     * - docs
-      - | |docs|
+      - |docs|
     * - tests
-      - | |github-actions| |codecov|
+      - |github-actions| |codecov|
     * - package
-      - | |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
+      - |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless/
     :alt: Documentation Status
@@ -36,13 +38,7 @@
     :alt: Commits since latest release
     :target: https://github.com/ionelmc/python-nameless/compare/v0.0.0...main
 
-----
-
 .. end-badges
-
-========
-Overview
-========
 
 An example package. Generated with cookiecutter-pylibrary.
 
