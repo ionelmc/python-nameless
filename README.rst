@@ -7,9 +7,6 @@ Overview
 | |docs|
 | |github-actions| |codecov|
 | |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
-
-----
-
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless/
     :alt: Documentation Status
