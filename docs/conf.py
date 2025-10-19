@@ -23,7 +23,7 @@ except Exception:
     import traceback
 
     traceback.print_exc()
-    version = release = "1.0.0"
+    version = release = "0.0.0"
 
 pygments_style = "trac"
 templates_path = ["."]
