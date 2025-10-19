@@ -15,12 +15,20 @@ Why does this file exist, and why not put this in __main__?
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
 
-import click
+import sys
 
 from .core import compute
 
 
-@click.command()
-@click.argument("names", nargs=-1)
-def run(names):
-    click.echo(compute(names))
+def run(argv=sys.argv):
+    """
+    Args:
+        argv (list): List of arguments
+
+    Returns:
+        int: A return code
+
+    Does stuff.
+    """
+    print(compute(argv))
+    sys.exit(0)

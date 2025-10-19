@@ -12,28 +12,34 @@ extensions = [
 source_suffix = ".rst"
 master_doc = "index"
 project = "Nameless"
-year = "2019-now"
-author = "Ionel Cristian Mărieș"
+year = "2024"
+author = "Ionel Cristian Maries"
 copyright = f"{year}, {author}"
-version = release = "0.1.0"
+version = release = "0.0.0"
 
 pygments_style = "trac"
 templates_path = ["."]
 extlinks = {
-    "issue": ("https://github.com/ionelmc/python-nameless/issues/%s", "#"),
-    "pr": ("https://github.com/ionelmc/python-nameless/pull/%s", "PR #"),
+    "issue": ("https://github.com/ionelmc/python-nameless/issues/%s", "#%s"),
+    "pr": ("https://github.com/ionelmc/python-nameless/pull/%s", "PR #%s"),
 }
 
+html_theme = "furo"
 html_theme_options = {
-    "githuburl": "https://github.com/ionelmc/python-nameless/",
+    "source_repository": "https://github.com/ionelmc/python-nameless/",
+    "source_branch": "main",
+    "source_directory": "docs/",
+    "footer_icons": [
+        {
+            "url": "https://github.com/ionelmc/python-nameless/",
+            "html": "github.com/ionelmc/python-nameless",
+        },
+    ],
 }
 
 html_use_smartypants = True
 html_last_updated_fmt = "%b %d, %Y"
 html_split_index = False
-html_sidebars = {
-    "**": ["searchbox.html", "globaltoc.html", "sourcelink.html"],
-}
 html_short_title = f"{project}-{version}"
 
 napoleon_use_ivar = True

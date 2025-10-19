@@ -8,7 +8,7 @@ branch = true
 source =
     nameless
     tests
-parallel = true
+patch = subprocess
 
 [report]
 show_missing = true
