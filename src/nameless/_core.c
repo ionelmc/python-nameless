@@ -2786,7 +2786,7 @@ static CYTHON_SMALL_CODE int __pyx_m_traverse(PyObject *m, visitproc visit, void
 /* #### Code section: module_code ### */
 
 /* "nameless/_core.pyx":3
- * # cython: linetrace=True, language_level=3str
+ * # cython: linetrace=True, freethreading_compatible=True
  * 
  * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
@@ -2926,7 +2926,7 @@ static PyObject *__pyx_pf_8nameless_5_core_compute(CYTHON_UNUSED PyObject *__pyx
   goto __pyx_L0;
 
   /* "nameless/_core.pyx":3
- * # cython: linetrace=True, language_level=3str
+ * # cython: linetrace=True, freethreading_compatible=True
  * 
  * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
@@ -3043,7 +3043,7 @@ static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
   {Py_mod_exec, (void*)__pyx_pymod_exec__core},
   #if CYTHON_COMPILING_IN_CPYTHON_FREETHREADING
-  {Py_mod_gil, Py_MOD_GIL_USED},
+  {Py_mod_gil, Py_MOD_GIL_NOT_USED},
   #endif
   #if PY_VERSION_HEX >= 0x030C0000 && CYTHON_USE_MODULE_STATE
   {Py_mod_multiple_interpreters, Py_MOD_MULTIPLE_INTERPRETERS_NOT_SUPPORTED},
@@ -3244,7 +3244,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec__core(PyObject *__pyx_pyinit_modul
   __pyx_m = __pyx_t_1;
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON_FREETHREADING
-  PyUnstable_Module_SetGIL(__pyx_m, Py_MOD_GIL_USED);
+  PyUnstable_Module_SetGIL(__pyx_m, Py_MOD_GIL_NOT_USED);
   #endif
   __pyx_mstate = __pyx_mstate_global;
   CYTHON_UNUSED_VAR(__pyx_t_1);
@@ -3321,7 +3321,7 @@ __Pyx_RefNannySetupContext("PyInit__core", 0);
   __Pyx_TraceStartFunc("PyInit__core", __pyx_f[0], 1, 0, 0, 0, __PYX_ERR(0, 1, __pyx_L1_error));
 
   /* "nameless/_core.pyx":3
- * # cython: linetrace=True, language_level=3str
+ * # cython: linetrace=True, freethreading_compatible=True
  * 
  * def compute(args):             # <<<<<<<<<<<<<<
  *     return max(args, key=len)
@@ -3333,7 +3333,7 @@ __Pyx_RefNannySetupContext("PyInit__core", 0);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "nameless/_core.pyx":1
- * # cython: linetrace=True, language_level=3str             # <<<<<<<<<<<<<<
+ * # cython: linetrace=True, freethreading_compatible=True             # <<<<<<<<<<<<<<
  * 
  * def compute(args):
 */
