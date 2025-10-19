@@ -37,7 +37,7 @@ default_context:
     sphinx_docs: 'yes'
     sphinx_docs_hosting: https://python-nameless.readthedocs.io/
     sphinx_doctest: 'yes'
-    sphinx_theme: sphinx-rtd-theme
+    sphinx_theme: furo
     test_matrix_separate_coverage: 'yes'
     tests_inside_package: 'yes'
     version: 1.0.0
