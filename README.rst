@@ -1,6 +1,4 @@
-========
-Overview
-========
+
 
 .. start-badges
 
@@ -38,7 +36,13 @@ Overview
     :alt: Commits since latest release
     :target: https://github.com/ionelmc/python-nameless/compare/v0.0.0...main
 
+----
+
 .. end-badges
+
+========
+Overview
+========
 
 An example package. Generated with cookiecutter-pylibrary.
 
