@@ -4,15 +4,9 @@ Overview
 
 .. start-badges
 
-.. list-table::
-    :stub-columns: 1
-
-    * - docs
-      - |docs|
-    * - tests
-      - |github-actions| |codecov|
-    * - package
-      - |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
+| |docs|
+| |github-actions| |codecov|
+| |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
 .. |docs| image:: https://readthedocs.org/projects/python-nameless/badge/?style=flat
     :target: https://readthedocs.org/projects/python-nameless/
     :alt: Documentation Status
