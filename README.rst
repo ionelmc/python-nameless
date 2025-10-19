@@ -6,7 +6,11 @@ Overview
 
 | |docs|
 | |github-actions| |codecov|
-| |version| |wheel| |supported-versions| |supported-implementations| |commits-since|
+| |version|
+  |wheel|
+  |supported-versions|
+  |supported-implementations|
+  |commits-since|
 
 .. end-badges
 
