@@ -74,14 +74,14 @@ Note, to combine the coverage data from all the tox environments run:
     :alt: PyPI Package latest release
     :target: https://pypi.org/project/nameless
 .. |wheel| image:: https://img.shields.io/pypi/wheel/nameless.svg
+    :target: https://pypi.org/project/nameless
     :alt: PyPI Wheel
-    :target: https://pypi.org/project/nameless
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/nameless.svg
+    :target: https://pypi.org/project/nameless
     :alt: Supported versions
-    :target: https://pypi.org/project/nameless
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/nameless.svg
-    :alt: Supported implementations
     :target: https://pypi.org/project/nameless
+    :alt: Supported implementations
 .. |commits-since| image:: https://img.shields.io/github/commits-since/ionelmc/python-nameless/v0.0.0.svg
     :alt: Commits since latest release
     :target: https://github.com/ionelmc/python-nameless/compare/v0.0.0...main
